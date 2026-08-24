@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-08-24T14:25:23+09:00",
-    "generated_intraday": "2026-08-24T19:57:23+09:00",
-    "generated_calendar": "2026-08-24T19:57:23+09:00",
+    "generated_intraday": "2026-08-24T20:33:01+09:00",
+    "generated_calendar": "2026-08-24T20:33:01+09:00",
     "session_date": "2026-08-23",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,8 +72,8 @@
   },
   "market": {
     "dxy": {
-      "value": 99.01,
-      "change": 0.21,
+      "value": 99,
+      "change": 0.2,
       "change_pct": 0.21
     },
     "us10y": {
@@ -82,9 +82,9 @@
       "change_pct": 0.89
     },
     "vix": {
-      "value": 15.93,
-      "change": 0.8,
-      "change_pct": 5.29
+      "value": 15.99,
+      "change": 0.86,
+      "change_pct": 5.68
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 77570,
+        "price": 77960.44,
         "range_today": 1346.99,
         "range_vs_adr": 0.72,
         "spike_flag": false,
-        "updated_at": "2026-08-24T19:57:23+09:00"
+        "updated_at": "2026-08-24T20:33:01+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2462.71,
+        "price": 2476.93,
         "range_today": 66.16,
         "range_vs_adr": 0.811,
         "spike_flag": false,
-        "updated_at": "2026-08-24T19:57:23+09:00"
+        "updated_at": "2026-08-24T20:33:01+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 698.98,
+        "price": 702.08,
         "range_today": 12.06,
         "range_vs_adr": 0.705,
         "spike_flag": false,
-        "updated_at": "2026-08-24T19:57:23+09:00"
+        "updated_at": "2026-08-24T20:33:01+09:00"
       },
       "events": {
         "in_event_window": false,
