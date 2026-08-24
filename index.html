@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Risk Monitor — 暗号資産リスク計測</title>
+<style>
+  /* ---- tokens (light) ---- */
+  .viz-root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --ink-1: #0b0b0b;
+    --ink-2: #52514e;
+    --ink-muted: #898781;
+    --grid: #e1e0d9;
+    --baseline: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+    --meter-track: #f0efec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --page: #0d0d0d;
+      --ink-1: #ffffff;
+      --ink-2: #c3c2b7;
+      --ink-muted: #898781;
+      --grid: #2c2c2a;
+      --baseline: #383835;
+      --border: rgba(255,255,255,0.10);
+      --meter-track: #383835;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --ink-1: #ffffff;
+    --ink-2: #c3c2b7;
+    --ink-muted: #898781;
+    --grid: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255,255,255,0.10);
+    --meter-track: #383835;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .viz-root { background: var(--page); color: var(--ink-1); min-height: 100vh; padding: 20px; }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+
+  header h1 { font-size: 20px; font-weight: 700; }
+  header .sub { color: var(--ink-2); font-size: 12.5px; margin-top: 4px; line-height: 1.6; }
+  .stale { display: none; margin-top: 8px; padding: 8px 12px; border: 1px solid var(--warning);
+           border-radius: 8px; color: var(--warning); font-size: 13px; font-weight: 600; }
+  .stale.critical { border-color: var(--critical); color: var(--critical); }
+
+  .market { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+  .mtile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+           padding: 8px 14px; font-size: 12.5px; color: var(--ink-2); }
+  .mtile b { color: var(--ink-1); font-size: 15px; margin-left: 6px; }
+  .mtile span.chg { margin-left: 6px; font-size: 12px; }
+
+  .grid7 { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .card.dim { opacity: 0.65; }
+  .card h2 { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .card .sess { color: var(--ink-muted); font-size: 11px; font-weight: 400; margin-left: auto; }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700;
+           padding: 2px 9px; border-radius: 999px; border: 1.5px solid; }
+  .regime-normal  { color: var(--good);     border-color: var(--good); }
+  .regime-caution { color: var(--warning);  border-color: var(--warning); }
+  .regime-highvol { color: var(--serious);  border-color: var(--serious); }
+  .regime-extreme { color: var(--critical); border-color: var(--critical); }
+  .regime-null    { color: var(--ink-muted); border-color: var(--baseline); }
+
+  .flagrow { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .flag { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 7px; border: 1.5px solid; }
+  .flag-ok       { color: var(--good); border-color: var(--good); }
+  .flag-nogrid   { color: var(--serious); border-color: var(--serious); }
+  .flag-halt     { color: var(--critical); border-color: var(--critical); background: color-mix(in srgb, var(--critical) 12%, transparent); }
+  .flag-hold     { color: var(--warning); border-color: var(--warning); }
+  .flag-monitor  { color: var(--ink-muted); border-color: var(--baseline); }
+  .reasons { margin-top: 6px; font-size: 11.5px; color: var(--ink-2); line-height: 1.5; }
+
+  table.vals { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 12.5px; }
+  table.vals td { padding: 3px 0; color: var(--ink-2); }
+  table.vals td.v { text-align: right; color: var(--ink-1); font-variant-numeric: tabular-nums; }
+
+  .meterblock { margin-top: 10px; }
+  .meterlabel { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--ink-2); margin-bottom: 3px; }
+  .meterlabel b { color: var(--ink-1); font-variant-numeric: tabular-nums; }
+  .meter { position: relative; height: 8px; background: var(--meter-track); border-radius: 4px; overflow: visible; }
+  .meter .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
+  .meter .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink-muted); }
+  .meter .mark.alert { background: var(--critical); }
+
+  .events { margin-top: 12px; border-top: 1px solid var(--grid); padding-top: 9px; }
+  .events h3 { font-size: 11.5px; color: var(--ink-muted); font-weight: 600; margin-bottom: 5px; }
+  .ev { font-size: 12px; color: var(--ink-2); padding: 2.5px 0; display: flex; gap: 7px; align-items: baseline; }
+  .ev .t { color: var(--ink-1); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .ev .cur { font-weight: 700; }
+  .ev.gating .cur { color: var(--serious); }
+  .ev .win { color: var(--ink-muted); font-size: 11px; }
+  .ev.inwin { border-left: 3px solid var(--serious); padding-left: 6px; }
+  .noev { font-size: 12px; color: var(--ink-muted); }
+
+  .legend { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+            padding: 14px 16px; margin-top: 14px; }
+  .legend h3 { font-size: 12.5px; color: var(--ink-2); font-weight: 700; margin-bottom: 10px; }
+  .lgrid { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; align-items: start;
+           font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+  .lgrid .flag { white-space: nowrap; }
+  .lnote { margin-top: 10px; font-size: 11.5px; color: var(--ink-muted); line-height: 1.6; }
+
+  footer { margin-top: 22px; color: var(--ink-muted); font-size: 11.5px; line-height: 1.7; }
+  .err { color: var(--critical); font-size: 12px; margin-top: 10px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+  <div class="wrap">
+    <header>
+      <h1>Crypto Risk Monitor <span style="font-weight:400; font-size:13px; color:var(--ink-2);">暗号資産(BTC/ETH/BNB)リスク計測・デリスク判定 — 24/7</span></h1>
+      <div class="sub" id="meta">読み込み中…</div>
+      <div class="stale" id="stale"></div>
+      <div class="err" id="errors"></div>
+    </header>
+    <div class="market" id="market"></div>
+    <div class="grid7" id="cards"></div>
+    <div class="legend">
+      <h3>表示の見方(エントリー判定)</h3>
+      <div class="lgrid">
+        <div><span class="flag flag-ok">✓ 新規可</span></div>
+        <div>制限なし。高ボラ帯・イベントウィンドウ・急変のいずれにも該当しない状態。</div>
+        <div><span class="flag flag-nogrid">◆ 新規グリッド禁止</span></div>
+        <div>新規グリッド開始・段数追加を止める水準。条件: レジームが高ボラ(パーセンタイル80–95) または 対象イベントの前後ウィンドウ内。</div>
+        <div><span class="flag flag-halt">■ 新規全停止</span></div>
+        <div>新規を全面停止する水準。条件: レジームが異常(≥95) または 急変フラグ(当日レンジ÷ADR20が150%超)。</div>
+      </div>
+      <p class="lnote">共通: 既存ポジションの決済(TP)は常に許可。本表記は「新規」に関する判定のみ。カード内の「根拠」行に判定理由を表示する。レジーム(平常/注意)はそれだけでは判定を変えない(色表示のみ)。</p>
+    </div>
+    <footer>
+      本ページは市場データと市場判定のみを表示する(口座・運用情報は含まない)。事実データであり売買助言ではない。<br>
+      全銘柄24/7取引・日足はUTC暦日区切り(セッション日付はUTC日)。指標はすべて暦日ベース(ADR20=直近20暦日、RV20年率化=√365)。<br>
+      レジーム: ATR%の過去365暦日パーセンタイル — ●平常&lt;50 / ▲注意50–80 / ◆高ボラ80–95 / ■異常≥95(仮置き閾値・実測で確定)。<br>
+      急変フラグ: 当日(UTC)レンジ÷ADR20が150%超(進行中の急変検知・intraday値は実行間隔+遅延分の古さあり)。<br>
+      フィード: <a href="data/risk-feed.json" style="color:inherit;">data/risk-feed.json</a> ｜ 関連: <a href="https://mflab-inc.github.io/EA-Risk-Monitor/" style="color:inherit;">EA Risk Monitor(FXポートフォリオ)</a>
+    </footer>
+  </div>
+</div>
+<script>
+const REGIME = {
+  normal:  { icon: "●", label: "平常",   cls: "regime-normal" },
+  caution: { icon: "▲", label: "注意",   cls: "regime-caution" },
+  highvol: { icon: "◆", label: "高ボラ", cls: "regime-highvol" },
+  extreme: { icon: "■", label: "異常",   cls: "regime-extreme" },
+};
+const PAIR_ORDER = ["BTCUSD","ETHUSD","BNBUSD"];
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+// 暗号資産は24/7取引のため市場クローズ概念なし(鮮度警告は常に評価する)
+function fxMarketOpen() { return true; }
+const fmtT = (iso) => iso ? iso.replace("T"," ").slice(5,16) : "—";
+const fmtHM = (iso) => iso ? iso.slice(11,16) : "";
+const fmtMD = (iso) => iso ? iso.slice(5,10).replace("-","/") : "";
+
+function regimeBadge(r) {
+  const m = REGIME[r] || { icon: "○", label: "未計算", cls: "regime-null" };
+  return `<span class="badge ${m.cls}">${m.icon} ${m.label}</span>`;
+}
+
+function flagBadges(p) {
+  const f = p.flags || {};
+  const out = [];
+  const hasGates = "no_new_grid" in f;
+  if (hasGates) {
+    if (f.halt_all_new) out.push('<span class="flag flag-halt">■ 新規全停止</span>');
+    else if (f.no_new_grid) out.push('<span class="flag flag-nogrid">◆ 新規グリッド禁止</span>');
+    else out.push('<span class="flag flag-ok">✓ 新規可</span>');
+    if (f.monitor_only) out.push('<span class="flag flag-monitor">◇ 参考(ゲート非接続)</span>');
+  }
+  if ("vr_hold_check" in f) {
+    if (f.vr_hold_check) out.push('<span class="flag flag-hold">▲ 保有確認(週末・日銀またぎ)</span>');
+    else if (!hasGates) out.push('<span class="flag flag-ok">✓ 保有確認なし</span>');
+  }
+  return out.join(" ");
+}
+
+function meter(label, val, max, marks, color) {
+  const pct = val === null || val === undefined ? 0 : Math.min(val / max, 1) * 100;
+  const markHtml = marks.map(m =>
+    `<div class="mark ${m.alert ? "alert" : ""}" style="left:${(m.at / max) * 100}%"></div>`).join("");
+  const shown = val === null || val === undefined ? "—" : label.fmt(val);
+  return `<div class="meterblock">
+    <div class="meterlabel"><span>${label.name}</span><b>${shown}</b></div>
+    <div class="meter"><div class="fill" style="width:${pct}%; background:${color};">${""}</div>${markHtml}</div>
+  </div>`;
+}
+
+function card(key, p) {
+  const r = p.regime;
+  const rc = r === "extreme" ? "var(--critical)" : r === "highvol" ? "var(--serious)" : r === "caution" ? "var(--warning)" : "var(--good)";
+  const ratio = p.intraday?.range_vs_adr;
+  const ratioColor = ratio !== null && ratio !== undefined && ratio > 1.5 ? "var(--critical)" : "var(--ink-muted)";
+  const evs = (p.events?.next_48h || []);
+  const evHtml = evs.length === 0 ? '<div class="noev">48時間以内の対象イベントなし</div>' :
+    evs.map(e => {
+      const inwin = (p.events.active || []).some(a => a.title === e.title && a.time_jst === e.time_jst);
+      return `<div class="ev ${e.gating ? "gating" : ""} ${inwin ? "inwin" : ""}">
+        <span class="t">${fmtMD(e.time_jst)} ${fmtHM(e.time_jst)}</span>
+        <span class="cur">${esc(e.currency)}</span>
+        <span>${esc(e.title)}</span>
+        ${e.gating && e.window_start_jst ? `<span class="win">窓 ${fmtHM(e.window_start_jst)}–${fmtHM(e.window_end_jst)}</span>` : ""}
+      </div>`;
+    }).join("");
+  const reasons = (p.flags?.reasons || []);
+  return `<div class="card ${p.data_ok ? "" : "dim"}">
+    <h2>${key} ${regimeBadge(r)} <span class="sess">D1(UTC): ${esc(p.session_date || "—")}${p.data_ok ? "" : " ⚠データ未確定"}</span></h2>
+    <div class="flagrow">${flagBadges(p)}</div>
+    ${reasons.length ? `<div class="reasons">根拠: ${reasons.map(esc).join(" / ")}</div>` : ""}
+    ${meter({ name: "ATR%パーセンタイル(365日)", fmt: v => v.toFixed(1) }, p.atr_pct_percentile_250, 100,
+        [{at:50},{at:80},{at:95,alert:true}], rc)}
+    ${meter({ name: "当日レンジ ÷ ADR20", fmt: v => (v*100).toFixed(0) + "%" }, ratio, 2,
+        [{at:1},{at:1.5,alert:true}], ratioColor)}
+    <table class="vals">
+      <tr><td>終値(D1)</td><td class="v">${p.close ?? "—"}</td><td style="padding-left:14px">ATR14</td><td class="v">${p.atr14 ?? "—"}</td></tr>
+      <tr><td>ATR%</td><td class="v">${p.atr_pct ?? "—"}%</td><td style="padding-left:14px">ADR20</td><td class="v">${p.adr20 ?? "—"}</td></tr>
+      <tr><td>RV20(年率)</td><td class="v">${p.rv20 ?? "—"}%</td><td style="padding-left:14px">現在値</td><td class="v">${p.intraday?.price ?? "—"}</td></tr>
+    </table>
+    <div class="events"><h3>48時間イベント(JST・▍=ウィンドウ内)</h3>${evHtml}</div>
+  </div>`;
+}
+
+async function load() {
+  let feed;
+  try {
+    const res = await fetch("data/risk-feed.json?t=" + Date.now());
+    feed = await res.json();
+  } catch (e) {
+    document.getElementById("meta").textContent = "risk-feed.json を読み込めません(initワークフローを先に実行してください)";
+    return;
+  }
+  const m = feed.meta || {};
+  document.getElementById("meta").innerHTML =
+    `セッション日付: <b>${esc(m.session_date || "—")}</b> ｜ 日次更新: ${fmtT(m.generated_daily)} ｜ ` +
+    `日中更新: ${fmtT(m.generated_intraday)} ｜ カレンダー: ${fmtT(m.generated_calendar)}(JST)`;
+
+  // 鮮度警告(2段階)。暗号資産は24/7のため常に評価する。
+  // ・120分超〜6時間: 「更新遅延」(GitHubの実行遅延・間引きでよく起きる。通常は自動回復)
+  // ・6時間超: 「停止の可能性」(赤・Actions要確認)
+  const latest = [m.generated_intraday, m.generated_daily].filter(Boolean).sort().pop();
+  const staleEl = document.getElementById("stale");
+  if (latest) {
+    const age = (Date.now() - new Date(latest).getTime()) / 60000;
+    const warnMin = m.thresholds?.feed_staleness_warn_minutes ?? 120;
+    if (fxMarketOpen() && age > 360) {
+      staleEl.className = "stale critical";
+      staleEl.textContent = `⚠ フィード停止の可能性: 最終更新から約${Math.floor(age / 60)}時間経過。Actionsの実行履歴を確認してください(赤❌があればログを確認)。`;
+      staleEl.style.display = "block";
+    } else if (fxMarketOpen() && age > warnMin) {
+      staleEl.className = "stale";
+      staleEl.textContent = `△ 更新遅延: 最終更新から${Math.round(age)}分経過。GitHub側の実行遅延・間引きの可能性が高く、通常は次の実行で自動回復します(急ぐ場合のみActionsで手動実行)。`;
+      staleEl.style.display = "block";
+    } else {
+      staleEl.style.display = "none";
+    }
+  }
+
+  const errs = (m.errors || []);
+  document.getElementById("errors").textContent = errs.length ? "取得エラー: " + errs.join(" / ") : "";
+
+  const mkt = feed.market || {};
+  const mt = (label, o, unit="") => `<div class="mtile">${label}<b>${o ? o.value + unit : "—"}</b>` +
+    (o ? `<span class="chg" style="color:${o.change >= 0 ? "var(--good)" : "var(--critical)"}">${o.change >= 0 ? "+" : ""}${o.change_pct ?? o.change}${o.change_pct !== undefined ? "%" : ""}</span>` : "") + `</div>`;
+  document.getElementById("market").innerHTML =
+    mt("DXY ", mkt.dxy) + mt("US10Y ", mkt.us10y, "%") + mt("VIX ", mkt.vix) +
+    `<div class="mtile" style="border-style:dashed;">参考情報(判定には未使用)</div>`;
+
+  document.getElementById("cards").innerHTML =
+    PAIR_ORDER.filter(k => feed.pairs && feed.pairs[k]).map(k => card(k, feed.pairs[k])).join("");
+}
+load();
+setInterval(load, 5 * 60 * 1000); // 5分ごとに再読込
+</script>
+</body>
+</html>

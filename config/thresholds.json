@@ -1,0 +1,43 @@
+{
+  "_note": "すべて仮置き(2026-08-02時点)。運用実測(data/archive/の日次スナップショット蓄積)で確定する2段階方式はEA-Risk-Monitorと同じ。暗号資産は24/7取引のため暦日ベース: パーセンタイル365暦日・年率化sqrt(365)。",
+  "regime_percentile": {
+    "caution": 50,
+    "highvol": 80,
+    "extreme": 95,
+    "_note": "平常 p<50 / 注意 50<=p<80 / 高ボラ 80<=p<95 / 異常 p>=95。境界値は上位側(保守側)に割当て"
+  },
+  "range_vs_adr_alert": 1.5,
+  "percentile_lookback": 365,
+  "percentile_min_window": 180,
+  "rv_annualization_days": 365,
+  "history_keep_bars": 500,
+  "event_windows_hours": {
+    "standard": {
+      "central_bank_major": { "pre": 24, "post": 2 },
+      "central_bank": { "pre": 12, "post": 2 },
+      "indicator": { "pre": 12, "post": 1 }
+    },
+    "short": {
+      "central_bank_major": { "pre": 6, "post": 1 },
+      "central_bank": { "pre": 6, "post": 1 },
+      "indicator": { "pre": 6, "post": 1 }
+    }
+  },
+  "event_class_by_type": {
+    "boj": "central_bank_major",
+    "fomc": "central_bank_major",
+    "boe": "central_bank",
+    "ecb": "central_bank",
+    "rba": "central_bank",
+    "rbnz": "central_bank",
+    "boc": "central_bank",
+    "us_cpi": "indicator",
+    "us_jobs": "indicator",
+    "uk_cpi": "indicator",
+    "uk_jobs": "indicator",
+    "ca_jobs": "indicator",
+    "china_data": "indicator",
+    "oil": "indicator"
+  },
+  "feed_staleness_warn_minutes": 120
+}

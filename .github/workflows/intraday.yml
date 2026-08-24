@@ -1,0 +1,38 @@
+name: Intraday Crypto Risk Update
+
+on:
+  schedule:
+    # 1時間8回・24/7(暗号資産は週末も取引日のため市場時間スキップなし)。
+    # 実行分は「キリの良い分」(GitHub全体のcronが集中し間引かれやすい)を避け、
+    # かつ既存FXDaily-Levels(:13/:43)から7分以上・EA-Risk-Monitorの実行分
+    # (3,6,21,26,31,36,53,58)とも重ならない値を選定(同一APIキー共有のため)。
+    - cron: "2,4,22,28,34,52,57,59 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  intraday:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run intraday batch
+        env:
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: node scripts/intraday.js
+
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/risk-feed.json
+          git diff --cached --quiet || git commit -m "intraday: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+          git push || (git pull --rebase -X theirs origin main && git push)

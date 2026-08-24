@@ -1,0 +1,24 @@
+{
+  "_note": "公開してよい市場ロジックのみを定義する。EA名・配分・ロット・口座情報・どのEAがどのフラグに従うかの対応はここに書かない(VPS側で管理)。全銘柄24/7取引・UTC暦日の日足を使用。",
+  "BTCUSD": {
+    "symbol": "BTC/USD",
+    "digits": 2,
+    "watch_currencies": ["USD"],
+    "watch_events": ["fomc", "us_cpi", "us_jobs"],
+    "window_profile": "standard"
+  },
+  "ETHUSD": {
+    "symbol": "ETH/USD",
+    "digits": 2,
+    "watch_currencies": ["USD"],
+    "watch_events": ["fomc", "us_cpi", "us_jobs"],
+    "window_profile": "standard"
+  },
+  "BNBUSD": {
+    "symbol": "BNB/USD",
+    "digits": 2,
+    "watch_currencies": ["USD"],
+    "watch_events": ["fomc", "us_cpi", "us_jobs"],
+    "window_profile": "standard"
+  }
+}

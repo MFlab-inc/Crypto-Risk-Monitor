@@ -1,0 +1,13 @@
+{
+  "name": "crypto-risk-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "暗号資産(BTC/ETH/BNB)向けリスク計測・デリスクフィード生成(GitHub Actions + GitHub Pages・24/7)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node test/run-tests.js",
+    "init": "node scripts/init-history.js",
+    "daily": "node scripts/daily.js",
+    "intraday": "node scripts/intraday.js"
+  }
+}

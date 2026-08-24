@@ -1,0 +1,35 @@
+name: Init History (Crypto Phase 0)
+
+# Phase 0: 日足履歴の一括初期化。手動実行のみ(Actionsタブ → Init History → Run workflow)
+# BTC/ETH/BNBがTwelve Dataで取得可能かの実確認もこの初回実行で行う
+# (取得不可・本数不足の銘柄はFAILとして明示され、他銘柄には影響しない)
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Initialize daily history (560 bars x 3 symbols)
+        env:
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: node scripts/init-history.js
+
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "init: history $(TZ=Asia/Tokyo date +%Y-%m-%d)"
+          git push || (git pull --rebase -X theirs origin main && git push)
