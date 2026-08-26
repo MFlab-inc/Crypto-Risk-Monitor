@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-08-26T14:17:40+09:00",
-    "generated_intraday": "2026-08-26T22:31:37+09:00",
-    "generated_calendar": "2026-08-26T22:31:37+09:00",
+    "generated_intraday": "2026-08-26T23:21:55+09:00",
+    "generated_calendar": "2026-08-26T23:21:55+09:00",
     "session_date": "2026-08-25",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.11,
-      "change": 0.19,
-      "change_pct": 0.2
+      "value": 99.15,
+      "change": 0.23,
+      "change_pct": 0.23
     },
     "us10y": {
-      "value": 4.656,
-      "change": 0.017,
-      "change_pct": 0.37
+      "value": 4.666,
+      "change": 0.027,
+      "change_pct": 0.58
     },
     "vix": {
-      "value": 15.72,
-      "change": 0.27,
-      "change_pct": 1.75
+      "value": 15.46,
+      "change": 0.01,
+      "change_pct": 0.06
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 78205.52,
+        "price": 78528,
         "range_today": 1338.41,
         "range_vs_adr": 0.641,
         "spike_flag": false,
-        "updated_at": "2026-08-26T22:31:37+09:00"
+        "updated_at": "2026-08-26T23:21:55+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -125,6 +125,28 @@
             "currency": "USD",
             "impact": "High",
             "title": "Prelim GDP q/q",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Prelim Benchmark Payrolls Revision",
             "types": [],
             "window_start_jst": null,
             "window_end_jst": null,
@@ -150,11 +172,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2447.94,
+        "price": 2459.03,
         "range_today": 39.8,
         "range_vs_adr": 0.455,
         "spike_flag": false,
-        "updated_at": "2026-08-26T22:31:37+09:00"
+        "updated_at": "2026-08-26T23:21:55+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -175,6 +197,28 @@
             "currency": "USD",
             "impact": "High",
             "title": "Prelim GDP q/q",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Prelim Benchmark Payrolls Revision",
             "types": [],
             "window_start_jst": null,
             "window_end_jst": null,
@@ -200,11 +244,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 699.61,
+        "price": 701.04,
         "range_today": 16.66,
         "range_vs_adr": 0.885,
         "spike_flag": false,
-        "updated_at": "2026-08-26T22:31:37+09:00"
+        "updated_at": "2026-08-26T23:21:55+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -225,6 +269,28 @@
             "currency": "USD",
             "impact": "High",
             "title": "Prelim GDP q/q",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Prelim Benchmark Payrolls Revision",
             "types": [],
             "window_start_jst": null,
             "window_end_jst": null,
