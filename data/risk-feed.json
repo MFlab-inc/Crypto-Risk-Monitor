@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-08-27T16:11:21+09:00",
+    "generated_daily": "2026-08-28T00:32:39+09:00",
     "generated_intraday": "2026-08-27T19:38:14+09:00",
-    "generated_calendar": "2026-08-27T19:38:14+09:00",
+    "generated_calendar": "2026-08-28T00:32:39+09:00",
     "session_date": "2026-08-26",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.2,
-      "change": 0.03,
-      "change_pct": 0.03
+      "value": 99.14,
+      "change": -0.03,
+      "change_pct": -0.03
     },
     "us10y": {
-      "value": 4.664,
-      "change": 0.025,
-      "change_pct": 0.54
+      "value": 4.656,
+      "change": -0.008,
+      "change_pct": -0.17
     },
     "vix": {
-      "value": 14.96,
-      "change": -0.25,
-      "change_pct": -1.64
+      "value": 14.46,
+      "change": -0.75,
+      "change_pct": -4.93
     }
   },
   "pairs": {
@@ -107,8 +107,20 @@
         "updated_at": "2026-08-27T19:38:14+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-08-28T23:00:00+09:00",
@@ -135,9 +147,11 @@
         ]
       },
       "flags": {
-        "no_new_grid": false,
+        "no_new_grid": true,
         "halt_all_new": false,
-        "reasons": []
+        "reasons": [
+          "event:Fed Chairman Warsh Speaks"
+        ]
       }
     },
     "ETHUSD": {
@@ -159,8 +173,20 @@
         "updated_at": "2026-08-27T19:38:14+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-08-28T23:00:00+09:00",
@@ -187,9 +213,11 @@
         ]
       },
       "flags": {
-        "no_new_grid": false,
+        "no_new_grid": true,
         "halt_all_new": false,
-        "reasons": []
+        "reasons": [
+          "event:Fed Chairman Warsh Speaks"
+        ]
       }
     },
     "BNBUSD": {
@@ -211,8 +239,20 @@
         "updated_at": "2026-08-27T19:38:14+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-08-28T23:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-08-27T23:00:00+09:00",
+            "window_end_jst": "2026-08-29T01:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-08-28T23:00:00+09:00",
@@ -239,9 +279,11 @@
         ]
       },
       "flags": {
-        "no_new_grid": false,
+        "no_new_grid": true,
         "halt_all_new": false,
-        "reasons": []
+        "reasons": [
+          "event:Fed Chairman Warsh Speaks"
+        ]
       }
     }
   }
