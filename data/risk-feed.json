@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-08-28T00:32:39+09:00",
+    "generated_daily": "2026-08-29T01:57:00+09:00",
     "generated_intraday": "2026-08-28T13:55:16+09:00",
-    "generated_calendar": "2026-08-28T13:55:16+09:00",
-    "session_date": "2026-08-26",
+    "generated_calendar": "2026-08-29T01:57:00+09:00",
+    "session_date": "2026-08-27",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
       "_note": "すべて仮置き(2026-08-02時点)。運用実測(data/archive/の日次スナップショット蓄積)で確定する2段階方式はEA-Risk-Monitorと同じ。暗号資産は24/7取引のため暦日ベース: パーセンタイル365暦日・年率化sqrt(365)。",
@@ -72,31 +72,31 @@
   },
   "market": {
     "dxy": {
-      "value": 99.18,
-      "change": 0.02,
-      "change_pct": 0.02
+      "value": 99.66,
+      "change": 0.5,
+      "change_pct": 0.51
     },
     "us10y": {
-      "value": 4.672,
-      "change": 0.008,
-      "change_pct": 0.17
+      "value": 4.724,
+      "change": 0.052,
+      "change_pct": 1.11
     },
     "vix": {
-      "value": 14.51,
-      "change": -0.7,
-      "change_pct": -4.6
+      "value": 14.63,
+      "change": 0.12,
+      "change_pct": 0.83
     }
   },
   "pairs": {
     "BTCUSD": {
       "data_ok": true,
-      "session_date": "2026-08-26",
-      "close": 79023.75,
-      "atr14": 2281.22,
-      "atr_pct": 2.887,
-      "adr20": 2128.11,
-      "rv20": 47.93,
-      "atr_pct_percentile_250": 37.8,
+      "session_date": "2026-08-27",
+      "close": 80249.58,
+      "atr14": 2282.74,
+      "atr_pct": 2.845,
+      "adr20": 2181.99,
+      "rv20": 47.98,
+      "atr_pct_percentile_250": 37,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
@@ -107,62 +107,25 @@
         "updated_at": "2026-08-28T13:55:16+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim Benchmark Payrolls Revision",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:Fed Chairman Warsh Speaks"
-        ]
+        "reasons": []
       }
     },
     "ETHUSD": {
       "data_ok": true,
-      "session_date": "2026-08-26",
-      "close": 2506.78,
-      "atr14": 96.43,
-      "atr_pct": 3.847,
-      "adr20": 90.25,
-      "rv20": 79.5,
-      "atr_pct_percentile_250": 25.8,
+      "session_date": "2026-08-27",
+      "close": 2510.94,
+      "atr14": 95.6,
+      "atr_pct": 3.807,
+      "adr20": 92.06,
+      "rv20": 79.59,
+      "atr_pct_percentile_250": 24.9,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
@@ -173,62 +136,25 @@
         "updated_at": "2026-08-28T13:55:16+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim Benchmark Payrolls Revision",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:Fed Chairman Warsh Speaks"
-        ]
+        "reasons": []
       }
     },
     "BNBUSD": {
       "data_ok": true,
-      "session_date": "2026-08-26",
-      "close": 707.52,
-      "atr14": 20.13,
-      "atr_pct": 2.845,
-      "adr20": 19.25,
-      "rv20": 34.14,
-      "atr_pct_percentile_250": 27.1,
+      "session_date": "2026-08-27",
+      "close": 711.85,
+      "atr14": 19.75,
+      "atr_pct": 2.774,
+      "adr20": 19.52,
+      "rv20": 33.95,
+      "atr_pct_percentile_250": 23.3,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
@@ -239,51 +165,14 @@
         "updated_at": "2026-08-28T13:55:16+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Fed Chairman Warsh Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-08-27T23:00:00+09:00",
-            "window_end_jst": "2026-08-29T01:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-08-28T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim Benchmark Payrolls Revision",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:Fed Chairman Warsh Speaks"
-        ]
+        "reasons": []
       }
     }
   }
