@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-08-28T00:32:39+09:00",
-    "generated_intraday": "2026-08-28T05:48:01+09:00",
-    "generated_calendar": "2026-08-28T05:48:01+09:00",
+    "generated_intraday": "2026-08-28T11:50:20+09:00",
+    "generated_calendar": "2026-08-28T11:50:20+09:00",
     "session_date": "2026-08-26",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 99.14,
-      "change": -0.03,
-      "change_pct": -0.03
+      "value": 99.15,
+      "change": -0.01,
+      "change_pct": -0.01
     },
     "us10y": {
       "value": 4.672,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 80030.7,
-        "range_today": 2302.61,
-        "range_vs_adr": 1.082,
+        "price": 79913.6,
+        "range_today": 1677.45,
+        "range_vs_adr": 0.788,
         "spike_flag": false,
-        "updated_at": "2026-08-28T05:48:01+09:00"
+        "updated_at": "2026-08-28T11:50:20+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -166,11 +166,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2507.02,
-        "range_today": 84.79,
-        "range_vs_adr": 0.94,
+        "price": 2491.5,
+        "range_today": 47.02,
+        "range_vs_adr": 0.521,
         "spike_flag": false,
-        "updated_at": "2026-08-28T05:48:01+09:00"
+        "updated_at": "2026-08-28T11:50:20+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -232,11 +232,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 710.51,
-        "range_today": 14.74,
-        "range_vs_adr": 0.766,
+        "price": 707.16,
+        "range_today": 13.48,
+        "range_vs_adr": 0.7,
         "spike_flag": false,
-        "updated_at": "2026-08-28T05:48:01+09:00"
+        "updated_at": "2026-08-28T11:50:20+09:00"
       },
       "events": {
         "in_event_window": true,
