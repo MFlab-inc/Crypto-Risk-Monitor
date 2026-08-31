@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-08-31T20:10:22+09:00",
-    "generated_intraday": "2026-08-31T19:59:58+09:00",
-    "generated_calendar": "2026-08-31T20:10:22+09:00",
+    "generated_intraday": "2026-09-01T02:58:26+09:00",
+    "generated_calendar": "2026-09-01T02:58:26+09:00",
     "session_date": "2026-08-30",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.55,
-      "change": -0.15,
-      "change_pct": -0.15
+      "value": 99.4,
+      "change": -0.3,
+      "change_pct": -0.3
     },
     "us10y": {
-      "value": 4.72,
-      "change": 0.048,
-      "change_pct": 1.03
+      "value": 4.756,
+      "change": 0.036,
+      "change_pct": 0.76
     },
     "vix": {
-      "value": 15.21,
-      "change": 0.78,
-      "change_pct": 5.41
+      "value": 15.11,
+      "change": 0.68,
+      "change_pct": 4.71
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 78673.13,
-        "range_today": 1410,
-        "range_vs_adr": 0.587,
+        "price": 78947.39,
+        "range_today": 1627.86,
+        "range_vs_adr": 0.667,
         "spike_flag": false,
-        "updated_at": "2026-08-31T19:59:58+09:00"
+        "updated_at": "2026-09-01T02:58:26+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -119,6 +119,18 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-02T21:15:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "ADP Non-Farm Employment Change",
+            "types": [
+              "us_jobs"
+            ],
+            "window_start_jst": "2026-09-02T09:15:00+09:00",
+            "window_end_jst": "2026-09-02T22:15:00+09:00",
+            "gating": true
           }
         ]
       },
@@ -140,11 +152,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2454.92,
-        "range_today": 55.55,
-        "range_vs_adr": 0.568,
+        "price": 2476.15,
+        "range_today": 76.74,
+        "range_vs_adr": 0.753,
         "spike_flag": false,
-        "updated_at": "2026-08-31T19:59:58+09:00"
+        "updated_at": "2026-09-01T02:58:26+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -159,6 +171,18 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-02T21:15:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "ADP Non-Farm Employment Change",
+            "types": [
+              "us_jobs"
+            ],
+            "window_start_jst": "2026-09-02T09:15:00+09:00",
+            "window_end_jst": "2026-09-02T22:15:00+09:00",
+            "gating": true
           }
         ]
       },
@@ -180,11 +204,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 689.14,
-        "range_today": 7.45,
-        "range_vs_adr": 0.373,
+        "price": 693.04,
+        "range_today": 10.86,
+        "range_vs_adr": 0.523,
         "spike_flag": false,
-        "updated_at": "2026-08-31T19:59:58+09:00"
+        "updated_at": "2026-09-01T02:58:26+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -199,6 +223,18 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-02T21:15:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "ADP Non-Farm Employment Change",
+            "types": [
+              "us_jobs"
+            ],
+            "window_start_jst": "2026-09-02T09:15:00+09:00",
+            "window_end_jst": "2026-09-02T22:15:00+09:00",
+            "gating": true
           }
         ]
       },
