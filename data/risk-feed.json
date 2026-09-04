@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-04T18:05:32+09:00",
-    "generated_intraday": "2026-09-04T13:59:03+09:00",
-    "generated_calendar": "2026-09-04T18:05:32+09:00",
+    "generated_intraday": "2026-09-04T18:29:20+09:00",
+    "generated_calendar": "2026-09-04T18:29:20+09:00",
     "session_date": "2026-09-03",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": -0.71
     },
     "vix": {
-      "value": 14.2,
-      "change": -0.12,
-      "change_pct": -0.84
+      "value": 14.24,
+      "change": -0.08,
+      "change_pct": -0.56
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 81088,
-        "range_today": 758.3,
-        "range_vs_adr": 0.295,
+        "price": 81009.89,
+        "range_today": 924.88,
+        "range_vs_adr": 0.333,
         "spike_flag": false,
-        "updated_at": "2026-09-04T13:59:03+09:00"
+        "updated_at": "2026-09-04T18:29:20+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -204,11 +204,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2509.12,
-        "range_today": 27.95,
-        "range_vs_adr": 0.258,
+        "price": 2523.78,
+        "range_today": 49.61,
+        "range_vs_adr": 0.431,
         "spike_flag": false,
-        "updated_at": "2026-09-04T13:59:03+09:00"
+        "updated_at": "2026-09-04T18:29:20+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -308,11 +308,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 726.18,
-        "range_today": 11.68,
-        "range_vs_adr": 0.56,
+        "price": 718.19,
+        "range_today": 16.15,
+        "range_vs_adr": 0.72,
         "spike_flag": false,
-        "updated_at": "2026-09-04T13:59:03+09:00"
+        "updated_at": "2026-09-04T18:29:20+09:00"
       },
       "events": {
         "in_event_window": true,
