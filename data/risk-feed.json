@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-04T22:37:27+09:00",
-    "generated_intraday": "2026-09-04T23:28:49+09:00",
-    "generated_calendar": "2026-09-04T23:28:49+09:00",
+    "generated_intraday": "2026-09-04T23:34:51+09:00",
+    "generated_calendar": "2026-09-04T23:34:51+09:00",
     "session_date": "2026-09-03",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -77,14 +77,14 @@
       "change_pct": 0.15
     },
     "us10y": {
-      "value": 4.772,
-      "change": 0.01,
-      "change_pct": 0.21
+      "value": 4.77,
+      "change": 0.008,
+      "change_pct": 0.17
     },
     "vix": {
-      "value": 14.1,
-      "change": -0.22,
-      "change_pct": -1.54
+      "value": 14.08,
+      "change": -0.24,
+      "change_pct": -1.68
     }
   },
   "pairs": {
@@ -100,53 +100,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 79388.9,
+        "price": 79381.99,
         "range_today": 2427.75,
         "range_vs_adr": 0.873,
         "spike_flag": false,
-        "updated_at": "2026-09-04T23:28:49+09:00"
+        "updated_at": "2026-09-04T23:34:51+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -166,53 +129,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2453.97,
+        "price": 2454.23,
         "range_today": 111.97,
         "range_vs_adr": 0.973,
         "spike_flag": false,
-        "updated_at": "2026-09-04T23:28:49+09:00"
+        "updated_at": "2026-09-04T23:34:51+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -232,53 +158,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 714.56,
+        "price": 714.72,
         "range_today": 19.38,
         "range_vs_adr": 0.864,
         "spike_flag": false,
-        "updated_at": "2026-09-04T23:28:49+09:00"
+        "updated_at": "2026-09-04T23:34:51+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-04T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-04T09:30:00+09:00",
-            "window_end_jst": "2026-09-04T22:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
