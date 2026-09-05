@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-05T17:38:36+09:00",
-    "generated_intraday": "2026-09-05T20:04:54+09:00",
-    "generated_calendar": "2026-09-05T20:04:54+09:00",
+    "generated_intraday": "2026-09-05T20:22:54+09:00",
+    "generated_calendar": "2026-09-05T20:22:54+09:00",
     "session_date": "2026-09-04",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 79631.87,
+        "price": 79624,
         "range_today": 321.41,
         "range_vs_adr": 0.111,
         "spike_flag": false,
-        "updated_at": "2026-09-05T20:04:54+09:00"
+        "updated_at": "2026-09-05T20:22:54+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2454.5,
+        "price": 2453.17,
         "range_today": 15.81,
         "range_vs_adr": 0.131,
         "spike_flag": false,
-        "updated_at": "2026-09-05T20:04:54+09:00"
+        "updated_at": "2026-09-05T20:22:54+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 748.17,
-        "range_today": 32.97,
-        "range_vs_adr": 1.422,
-        "spike_flag": false,
-        "updated_at": "2026-09-05T20:04:54+09:00"
+        "price": 752.07,
+        "range_today": 37.39,
+        "range_vs_adr": 1.612,
+        "spike_flag": true,
+        "updated_at": "2026-09-05T20:22:54+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -170,9 +170,11 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": false,
-        "halt_all_new": false,
-        "reasons": []
+        "no_new_grid": true,
+        "halt_all_new": true,
+        "reasons": [
+          "spike:range_vs_adr"
+        ]
       }
     }
   }
