@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-05T17:38:36+09:00",
-    "generated_intraday": "2026-09-05T20:22:54+09:00",
+    "generated_intraday": "2026-09-05T20:28:59+09:00",
     "generated_calendar": "2026-09-05T20:22:54+09:00",
     "session_date": "2026-09-04",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
@@ -68,7 +68,9 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": []
+    "errors": [
+      "intraday/calendar: Forex Factory 取得失敗: https://nfs.faireconomy.media/ff_calendar_thisweek.json: fetch failed / https://nfs.faireconomy.media/ff_calendar_nextweek.json: HTTP 404(前回ウィンドウ判定を保持)"
+    ]
   },
   "market": {
     "dxy": {
@@ -100,11 +102,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 79624,
+        "price": 79622.55,
         "range_today": 321.41,
         "range_vs_adr": 0.111,
         "spike_flag": false,
-        "updated_at": "2026-09-05T20:22:54+09:00"
+        "updated_at": "2026-09-05T20:28:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +131,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2453.17,
+        "price": 2453.88,
         "range_today": 15.81,
         "range_vs_adr": 0.131,
         "spike_flag": false,
-        "updated_at": "2026-09-05T20:22:54+09:00"
+        "updated_at": "2026-09-05T20:28:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +160,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 752.07,
+        "price": 752.51,
         "range_today": 37.39,
         "range_vs_adr": 1.612,
         "spike_flag": true,
-        "updated_at": "2026-09-05T20:22:54+09:00"
+        "updated_at": "2026-09-05T20:28:59+09:00"
       },
       "events": {
         "in_event_window": false,
