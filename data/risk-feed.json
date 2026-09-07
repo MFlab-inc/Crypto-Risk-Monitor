@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-07T18:45:59+09:00",
-    "generated_intraday": "2026-09-08T07:59:54+09:00",
-    "generated_calendar": "2026-09-08T07:59:54+09:00",
+    "generated_intraday": "2026-09-08T08:02:52+09:00",
+    "generated_calendar": "2026-09-08T08:02:52+09:00",
     "session_date": "2026-09-06",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 78949.02,
+        "price": 78978,
         "range_today": 1763.99,
         "range_vs_adr": 0.612,
         "spike_flag": false,
-        "updated_at": "2026-09-08T07:59:54+09:00"
+        "updated_at": "2026-09-08T08:02:52+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2482.84,
+        "price": 2484.18,
         "range_today": 70.64,
         "range_vs_adr": 0.576,
         "spike_flag": false,
-        "updated_at": "2026-09-08T07:59:54+09:00"
+        "updated_at": "2026-09-08T08:02:52+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 737.96,
+        "price": 739.04,
         "range_today": 23.43,
         "range_vs_adr": 0.868,
         "spike_flag": false,
-        "updated_at": "2026-09-08T07:59:54+09:00"
+        "updated_at": "2026-09-08T08:02:52+09:00"
       },
       "events": {
         "in_event_window": false,
