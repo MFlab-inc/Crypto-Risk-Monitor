@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-09-07T18:45:59+09:00",
+    "generated_daily": "2026-09-08T13:47:53+09:00",
     "generated_intraday": "2026-09-08T13:34:53+09:00",
-    "generated_calendar": "2026-09-08T13:34:53+09:00",
-    "session_date": "2026-09-06",
+    "generated_calendar": "2026-09-08T13:47:53+09:00",
+    "session_date": "2026-09-07",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
       "_note": "すべて仮置き(2026-08-02時点)。運用実測(data/archive/の日次スナップショット蓄積)で確定する2段階方式はEA-Risk-Monitorと同じ。暗号資産は24/7取引のため暦日ベース: パーセンタイル365暦日・年率化sqrt(365)。",
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 98.82,
-      "change": -0.34,
-      "change_pct": -0.34
+      "value": 98.85,
+      "change": -0.32,
+      "change_pct": -0.32
     },
     "us10y": {
       "value": 4.784,
@@ -90,13 +90,13 @@
   "pairs": {
     "BTCUSD": {
       "data_ok": true,
-      "session_date": "2026-09-06",
-      "close": 80341.83,
-      "atr14": 2320.5,
-      "atr_pct": 2.888,
-      "adr20": 2882.71,
-      "rv20": 53.88,
-      "atr_pct_percentile_250": 36.2,
+      "session_date": "2026-09-07",
+      "close": 79112.01,
+      "atr14": 2280.75,
+      "atr_pct": 2.883,
+      "adr20": 2919.36,
+      "rv20": 54.97,
+      "atr_pct_percentile_250": 35.3,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
@@ -119,13 +119,13 @@
     },
     "ETHUSD": {
       "data_ok": true,
-      "session_date": "2026-09-06",
-      "close": 2514.48,
-      "atr14": 94.82,
-      "atr_pct": 3.771,
-      "adr20": 122.59,
-      "rv20": 84.37,
-      "atr_pct_percentile_250": 24.4,
+      "session_date": "2026-09-07",
+      "close": 2490.16,
+      "atr14": 93.09,
+      "atr_pct": 3.738,
+      "adr20": 124.25,
+      "rv20": 84.83,
+      "atr_pct_percentile_250": 23.8,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
@@ -148,13 +148,13 @@
     },
     "BNBUSD": {
       "data_ok": true,
-      "session_date": "2026-09-06",
-      "close": 753,
-      "atr14": 23.92,
-      "atr_pct": 3.177,
-      "adr20": 26.98,
-      "rv20": 48.1,
-      "atr_pct_percentile_250": 41.4,
+      "session_date": "2026-09-07",
+      "close": 739.98,
+      "atr14": 23.89,
+      "atr_pct": 3.228,
+      "adr20": 27.85,
+      "rv20": 49.28,
+      "atr_pct_percentile_250": 42.2,
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
