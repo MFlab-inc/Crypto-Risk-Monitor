@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-09T18:14:05+09:00",
-    "generated_intraday": "2026-09-09T21:28:39+09:00",
-    "generated_calendar": "2026-09-09T21:28:39+09:00",
+    "generated_intraday": "2026-09-09T21:34:37+09:00",
+    "generated_calendar": "2026-09-09T21:34:37+09:00",
     "session_date": "2026-09-08",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 98.62,
-      "change": -0.22,
-      "change_pct": -0.22
+      "value": 98.64,
+      "change": -0.2,
+      "change_pct": -0.2
     },
     "us10y": {
       "value": 4.806,
@@ -82,9 +82,9 @@
       "change_pct": 0.46
     },
     "vix": {
-      "value": 16.55,
-      "change": 0.83,
-      "change_pct": 5.28
+      "value": 16.53,
+      "change": 0.81,
+      "change_pct": 5.15
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 79391.92,
+        "price": 79492.79,
         "range_today": 1304.21,
         "range_vs_adr": 0.479,
         "spike_flag": false,
-        "updated_at": "2026-09-09T21:28:39+09:00"
+        "updated_at": "2026-09-09T21:34:37+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,6 +129,54 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
           }
         ]
       },
@@ -150,11 +198,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2500.8,
+        "price": 2505.2,
         "range_today": 40.8,
         "range_vs_adr": 0.384,
         "spike_flag": false,
-        "updated_at": "2026-09-09T21:28:39+09:00"
+        "updated_at": "2026-09-09T21:34:37+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -179,6 +227,54 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
           }
         ]
       },
@@ -200,11 +296,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 749.81,
+        "price": 750.8,
         "range_today": 10.66,
         "range_vs_adr": 0.39,
         "spike_flag": false,
-        "updated_at": "2026-09-09T21:28:39+09:00"
+        "updated_at": "2026-09-09T21:34:37+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -229,6 +325,54 @@
             "window_start_jst": null,
             "window_end_jst": null,
             "gating": false
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-11T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI y/y",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-09-11T09:30:00+09:00",
+            "window_end_jst": "2026-09-11T22:30:00+09:00",
+            "gating": true
           }
         ]
       },
