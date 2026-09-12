@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-11T18:10:08+09:00",
-    "generated_intraday": "2026-09-12T09:00:06+09:00",
-    "generated_calendar": "2026-09-12T09:00:06+09:00",
+    "generated_intraday": "2026-09-12T09:02:59+09:00",
+    "generated_calendar": "2026-09-12T09:02:59+09:00",
     "session_date": "2026-09-10",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 77220,
-        "range_today": 3843.42,
-        "range_vs_adr": 1.617,
-        "spike_flag": true,
-        "updated_at": "2026-09-12T09:00:06+09:00"
+        "price": 77273.27,
+        "range_today": 67.63,
+        "range_vs_adr": 0.028,
+        "spike_flag": false,
+        "updated_at": "2026-09-12T09:02:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -112,11 +112,9 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
-        "halt_all_new": true,
-        "reasons": [
-          "spike:range_vs_adr"
-        ]
+        "no_new_grid": false,
+        "halt_all_new": false,
+        "reasons": []
       }
     },
     "ETHUSD": {
@@ -131,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2515.47,
-        "range_today": 232.22,
-        "range_vs_adr": 2.415,
-        "spike_flag": true,
-        "updated_at": "2026-09-12T09:00:06+09:00"
+        "price": 2515.59,
+        "range_today": 2.82,
+        "range_vs_adr": 0.029,
+        "spike_flag": false,
+        "updated_at": "2026-09-12T09:02:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -143,11 +141,9 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
-        "halt_all_new": true,
-        "reasons": [
-          "spike:range_vs_adr"
-        ]
+        "no_new_grid": false,
+        "halt_all_new": false,
+        "reasons": []
       }
     },
     "BNBUSD": {
@@ -162,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 726.81,
-        "range_today": 35.11,
-        "range_vs_adr": 1.314,
+        "price": 727.25,
+        "range_today": 0.76,
+        "range_vs_adr": 0.028,
         "spike_flag": false,
-        "updated_at": "2026-09-12T09:00:06+09:00"
+        "updated_at": "2026-09-12T09:02:59+09:00"
       },
       "events": {
         "in_event_window": false,
