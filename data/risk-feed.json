@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-12T13:47:25+09:00",
-    "generated_intraday": "2026-09-12T15:02:27+09:00",
-    "generated_calendar": "2026-09-12T15:02:27+09:00",
+    "generated_intraday": "2026-09-12T15:04:27+09:00",
+    "generated_calendar": "2026-09-12T15:04:27+09:00",
     "session_date": "2026-09-11",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -68,7 +68,9 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": []
+    "errors": [
+      "intraday/quote: fetch failed(前回値保持)"
+    ]
   },
   "market": {
     "dxy": {
