@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-14T13:47:26+09:00",
-    "generated_intraday": "2026-09-14T13:34:29+09:00",
-    "generated_calendar": "2026-09-14T13:47:26+09:00",
+    "generated_intraday": "2026-09-14T13:52:27+09:00",
+    "generated_calendar": "2026-09-14T13:52:27+09:00",
     "session_date": "2026-09-13",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 99.34,
-      "change": 0.22,
-      "change_pct": 0.22
+      "value": 99.35,
+      "change": 0.23,
+      "change_pct": 0.23
     },
     "us10y": {
       "value": 4.975,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 77542.13,
+        "price": 77659.47,
         "range_today": 1481.1,
-        "range_vs_adr": 0.63,
+        "range_vs_adr": 0.664,
         "spike_flag": false,
-        "updated_at": "2026-09-14T13:34:29+09:00"
+        "updated_at": "2026-09-14T13:52:27+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2511.9,
+        "price": 2515.55,
         "range_today": 55.29,
-        "range_vs_adr": 0.576,
+        "range_vs_adr": 0.589,
         "spike_flag": false,
-        "updated_at": "2026-09-14T13:34:29+09:00"
+        "updated_at": "2026-09-14T13:52:27+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 722.81,
+        "price": 724.45,
         "range_today": 11.34,
-        "range_vs_adr": 0.445,
+        "range_vs_adr": 0.451,
         "spike_flag": false,
-        "updated_at": "2026-09-14T13:34:29+09:00"
+        "updated_at": "2026-09-14T13:52:27+09:00"
       },
       "events": {
         "in_event_window": false,
