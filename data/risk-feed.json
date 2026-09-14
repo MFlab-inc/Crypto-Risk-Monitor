@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-14T19:08:48+09:00",
-    "generated_intraday": "2026-09-15T03:28:28+09:00",
-    "generated_calendar": "2026-09-15T03:28:28+09:00",
+    "generated_intraday": "2026-09-15T03:34:30+09:00",
+    "generated_calendar": "2026-09-15T03:34:30+09:00",
     "session_date": "2026-09-13",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.41,
-      "change": 0.29,
+      "value": 99.42,
+      "change": 0.3,
       "change_pct": 0.3
     },
     "us10y": {
-      "value": 4.957,
-      "change": -0.018,
-      "change_pct": -0.36
+      "value": 4.955,
+      "change": -0.02,
+      "change_pct": -0.4
     },
     "vix": {
-      "value": 16.73,
-      "change": 0.89,
-      "change_pct": 5.62
+      "value": 16.74,
+      "change": 0.9,
+      "change_pct": 5.68
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 79166.44,
+        "price": 79202.93,
         "range_today": 2865.01,
         "range_vs_adr": 1.284,
         "spike_flag": false,
-        "updated_at": "2026-09-15T03:28:28+09:00"
+        "updated_at": "2026-09-15T03:34:30+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -144,6 +144,18 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00",
             "gating": true
           }
         ]
@@ -166,11 +178,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2537.37,
-        "range_today": 75.29,
-        "range_vs_adr": 0.803,
+        "price": 2541.81,
+        "range_today": 78.78,
+        "range_vs_adr": 0.84,
         "spike_flag": false,
-        "updated_at": "2026-09-15T03:28:28+09:00"
+        "updated_at": "2026-09-15T03:34:30+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -210,6 +222,18 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00",
             "gating": true
           }
         ]
@@ -232,11 +256,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 727.27,
+        "price": 727.85,
         "range_today": 14.6,
         "range_vs_adr": 0.581,
         "spike_flag": false,
-        "updated_at": "2026-09-15T03:28:28+09:00"
+        "updated_at": "2026-09-15T03:34:30+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -276,6 +300,18 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00",
             "gating": true
           }
         ]
