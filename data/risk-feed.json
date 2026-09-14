@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-14T19:08:48+09:00",
-    "generated_intraday": "2026-09-15T02:59:30+09:00",
-    "generated_calendar": "2026-09-15T02:59:30+09:00",
+    "generated_intraday": "2026-09-15T03:03:20+09:00",
+    "generated_calendar": "2026-09-15T03:03:20+09:00",
     "session_date": "2026-09-13",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,7 +74,7 @@
     "dxy": {
       "value": 99.43,
       "change": 0.31,
-      "change_pct": 0.32
+      "change_pct": 0.31
     },
     "us10y": {
       "value": 4.959,
@@ -82,9 +82,9 @@
       "change_pct": -0.32
     },
     "vix": {
-      "value": 16.72,
-      "change": 0.88,
-      "change_pct": 5.56
+      "value": 16.7,
+      "change": 0.86,
+      "change_pct": 5.43
     }
   },
   "pairs": {
@@ -100,16 +100,53 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 78903.04,
+        "price": 78907.01,
         "range_today": 2659.72,
         "range_vs_adr": 1.192,
         "spike_flag": false,
-        "updated_at": "2026-09-15T02:59:30+09:00"
+        "updated_at": "2026-09-15T03:03:20+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Economic Projections",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -129,16 +166,53 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2532.55,
+        "price": 2533.29,
         "range_today": 72.98,
         "range_vs_adr": 0.778,
         "spike_flag": false,
-        "updated_at": "2026-09-15T02:59:30+09:00"
+        "updated_at": "2026-09-15T03:03:20+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Economic Projections",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -158,16 +232,53 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 726.39,
+        "price": 726.31,
         "range_today": 14.6,
         "range_vs_adr": 0.581,
         "spike_flag": false,
-        "updated_at": "2026-09-15T02:59:30+09:00"
+        "updated_at": "2026-09-15T03:03:20+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Economic Projections",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-09-17T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:00:00+09:00",
+            "window_end_jst": "2026-09-17T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
