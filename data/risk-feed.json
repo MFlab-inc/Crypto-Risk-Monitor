@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-13T18:46:02+09:00",
-    "generated_intraday": "2026-09-14T09:22:26+09:00",
-    "generated_calendar": "2026-09-14T09:22:26+09:00",
+    "generated_intraday": "2026-09-14T09:28:25+09:00",
+    "generated_calendar": "2026-09-14T09:28:25+09:00",
     "session_date": "2026-09-12",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -73,7 +73,7 @@
   "market": {
     "dxy": {
       "value": 99.13,
-      "change": 0.01,
+      "change": 0,
       "change_pct": 0.01
     },
     "us10y": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76780.34,
-        "range_today": 308.36,
-        "range_vs_adr": 0.131,
+        "price": 76572.01,
+        "range_today": 523.34,
+        "range_vs_adr": 0.223,
         "spike_flag": false,
-        "updated_at": "2026-09-14T09:22:26+09:00"
+        "updated_at": "2026-09-14T09:28:25+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2480.05,
-        "range_today": 15.29,
-        "range_vs_adr": 0.159,
+        "price": 2472.03,
+        "range_today": 20.83,
+        "range_vs_adr": 0.217,
         "spike_flag": false,
-        "updated_at": "2026-09-14T09:22:26+09:00"
+        "updated_at": "2026-09-14T09:28:25+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 717.05,
-        "range_today": 2.36,
-        "range_vs_adr": 0.093,
+        "price": 715.43,
+        "range_today": 3.2,
+        "range_vs_adr": 0.126,
         "spike_flag": false,
-        "updated_at": "2026-09-14T09:22:26+09:00"
+        "updated_at": "2026-09-14T09:28:25+09:00"
       },
       "events": {
         "in_event_window": false,
