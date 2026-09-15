@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-15T18:37:10+09:00",
-    "generated_intraday": "2026-09-16T03:28:26+09:00",
-    "generated_calendar": "2026-09-16T03:28:26+09:00",
+    "generated_intraday": "2026-09-16T03:34:29+09:00",
+    "generated_calendar": "2026-09-16T03:34:29+09:00",
     "session_date": "2026-09-14",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.64,
-      "change": 0.18,
-      "change_pct": 0.18
+      "value": 99.62,
+      "change": 0.16,
+      "change_pct": 0.16
     },
     "us10y": {
-      "value": 5.006,
-      "change": 0.045,
-      "change_pct": 0.91
+      "value": 5.004,
+      "change": 0.043,
+      "change_pct": 0.87
     },
     "vix": {
-      "value": 17.42,
-      "change": 0.32,
-      "change_pct": 1.87
+      "value": 17.48,
+      "change": 0.38,
+      "change_pct": 2.22
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76668,
+        "price": 76470.73,
         "range_today": 2645.46,
         "range_vs_adr": 1.192,
         "spike_flag": false,
-        "updated_at": "2026-09-16T03:28:26+09:00"
+        "updated_at": "2026-09-16T03:34:29+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -141,6 +141,17 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -200,7 +211,8 @@
         "reasons": [
           "event:Federal Funds Rate",
           "event:FOMC Economic Projections",
-          "event:FOMC Statement"
+          "event:FOMC Statement",
+          "event:FOMC Press Conference"
         ]
       }
     },
@@ -216,11 +228,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2428.49,
+        "price": 2418.65,
         "range_today": 130.28,
         "range_vs_adr": 1.365,
         "spike_flag": false,
-        "updated_at": "2026-09-16T03:28:26+09:00"
+        "updated_at": "2026-09-16T03:34:29+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -257,6 +269,17 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -316,7 +339,8 @@
         "reasons": [
           "event:Federal Funds Rate",
           "event:FOMC Economic Projections",
-          "event:FOMC Statement"
+          "event:FOMC Statement",
+          "event:FOMC Press Conference"
         ]
       }
     },
@@ -332,11 +356,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 721.78,
-        "range_today": 13.63,
-        "range_vs_adr": 0.555,
+        "price": 719.58,
+        "range_today": 13.95,
+        "range_vs_adr": 0.568,
         "spike_flag": false,
-        "updated_at": "2026-09-16T03:28:26+09:00"
+        "updated_at": "2026-09-16T03:34:29+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -373,6 +397,17 @@
             ],
             "window_start_jst": "2026-09-16T03:00:00+09:00",
             "window_end_jst": "2026-09-17T05:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-09-17T03:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Press Conference",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-16T03:30:00+09:00",
+            "window_end_jst": "2026-09-17T05:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -432,7 +467,8 @@
         "reasons": [
           "event:Federal Funds Rate",
           "event:FOMC Economic Projections",
-          "event:FOMC Statement"
+          "event:FOMC Statement",
+          "event:FOMC Press Conference"
         ]
       }
     }
