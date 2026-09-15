@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-15T18:37:10+09:00",
-    "generated_intraday": "2026-09-16T03:34:29+09:00",
-    "generated_calendar": "2026-09-16T03:34:29+09:00",
+    "generated_intraday": "2026-09-16T03:52:32+09:00",
+    "generated_calendar": "2026-09-16T03:52:32+09:00",
     "session_date": "2026-09-14",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.62,
-      "change": 0.16,
-      "change_pct": 0.16
+      "value": 99.64,
+      "change": 0.18,
+      "change_pct": 0.18
     },
     "us10y": {
-      "value": 5.004,
-      "change": 0.043,
-      "change_pct": 0.87
+      "value": 5.006,
+      "change": 0.045,
+      "change_pct": 0.91
     },
     "vix": {
-      "value": 17.48,
-      "change": 0.38,
-      "change_pct": 2.22
+      "value": 17.5,
+      "change": 0.4,
+      "change_pct": 2.34
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76470.73,
-        "range_today": 2645.46,
-        "range_vs_adr": 1.192,
+        "price": 75483.1,
+        "range_today": 3282.49,
+        "range_vs_adr": 1.479,
         "spike_flag": false,
-        "updated_at": "2026-09-16T03:34:29+09:00"
+        "updated_at": "2026-09-16T03:52:32+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -228,11 +228,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2418.65,
-        "range_today": 130.28,
-        "range_vs_adr": 1.365,
-        "spike_flag": false,
-        "updated_at": "2026-09-16T03:34:29+09:00"
+        "price": 2384.84,
+        "range_today": 161.12,
+        "range_vs_adr": 1.688,
+        "spike_flag": true,
+        "updated_at": "2026-09-16T03:52:32+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -335,8 +335,9 @@
       },
       "flags": {
         "no_new_grid": true,
-        "halt_all_new": false,
+        "halt_all_new": true,
         "reasons": [
+          "spike:range_vs_adr",
           "event:Federal Funds Rate",
           "event:FOMC Economic Projections",
           "event:FOMC Statement",
@@ -356,11 +357,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 719.58,
-        "range_today": 13.95,
-        "range_vs_adr": 0.568,
+        "price": 711.76,
+        "range_today": 18.28,
+        "range_vs_adr": 0.744,
         "spike_flag": false,
-        "updated_at": "2026-09-16T03:34:29+09:00"
+        "updated_at": "2026-09-16T03:52:32+09:00"
       },
       "events": {
         "in_event_window": true,
