@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-16T18:32:41+09:00",
-    "generated_intraday": "2026-09-17T00:22:42+09:00",
-    "generated_calendar": "2026-09-17T00:22:42+09:00",
+    "generated_intraday": "2026-09-17T00:28:39+09:00",
+    "generated_calendar": "2026-09-17T00:28:39+09:00",
     "session_date": "2026-09-15",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 99.66,
+      "value": 99.67,
       "change": 0.01,
-      "change_pct": 0.01
+      "change_pct": 0.02
     },
     "us10y": {
-      "value": 4.957,
-      "change": -0.039,
-      "change_pct": -0.78
+      "value": 4.955,
+      "change": -0.041,
+      "change_pct": -0.82
     },
     "vix": {
-      "value": 16.67,
-      "change": -0.53,
-      "change_pct": -3.08
+      "value": 16.7,
+      "change": -0.5,
+      "change_pct": -2.91
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 75764,
+        "price": 75717.13,
         "range_today": 954.01,
         "range_vs_adr": 0.414,
         "spike_flag": false,
-        "updated_at": "2026-09-17T00:22:42+09:00"
+        "updated_at": "2026-09-17T00:28:39+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -228,11 +228,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2392.4,
+        "price": 2389.01,
         "range_today": 51.22,
         "range_vs_adr": 0.516,
         "spike_flag": false,
-        "updated_at": "2026-09-17T00:22:42+09:00"
+        "updated_at": "2026-09-17T00:28:39+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -356,11 +356,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 711.34,
+        "price": 710.7,
         "range_today": 11.95,
         "range_vs_adr": 0.485,
         "spike_flag": false,
-        "updated_at": "2026-09-17T00:22:42+09:00"
+        "updated_at": "2026-09-17T00:28:39+09:00"
       },
       "events": {
         "in_event_window": true,
