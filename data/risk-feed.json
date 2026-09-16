@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-16T18:32:41+09:00",
-    "generated_intraday": "2026-09-17T05:28:27+09:00",
-    "generated_calendar": "2026-09-17T05:28:27+09:00",
+    "generated_intraday": "2026-09-17T05:34:33+09:00",
+    "generated_calendar": "2026-09-17T05:34:33+09:00",
     "session_date": "2026-09-15",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 100.3,
-      "change": 0.65,
-      "change_pct": 0.65
+      "value": 100.34,
+      "change": 0.69,
+      "change_pct": 0.69
     },
     "us10y": {
       "value": 5.006,
@@ -82,9 +82,9 @@
       "change_pct": 0.2
     },
     "vix": {
-      "value": 17.72,
-      "change": 0.52,
-      "change_pct": 3.02
+      "value": 17.71,
+      "change": 0.51,
+      "change_pct": 2.97
     }
   },
   "pairs": {
@@ -100,48 +100,21 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76130.04,
+        "price": 76138.01,
         "range_today": 1495.94,
         "range_vs_adr": 0.649,
         "spike_flag": false,
-        "updated_at": "2026-09-17T05:28:27+09:00"
+        "updated_at": "2026-09-17T05:34:33+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Press Conference"
-        ]
+        "reasons": []
       }
     },
     "ETHUSD": {
@@ -156,48 +129,21 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2408.93,
+        "price": 2409.62,
         "range_today": 61.53,
         "range_vs_adr": 0.619,
         "spike_flag": false,
-        "updated_at": "2026-09-17T05:28:27+09:00"
+        "updated_at": "2026-09-17T05:34:33+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Press Conference"
-        ]
+        "reasons": []
       }
     },
     "BNBUSD": {
@@ -212,48 +158,21 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 719.16,
+        "price": 719.94,
         "range_today": 17.64,
         "range_vs_adr": 0.716,
         "spike_flag": false,
-        "updated_at": "2026-09-17T05:28:27+09:00"
+        "updated_at": "2026-09-17T05:34:33+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00"
-          }
-        ],
-        "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Press Conference",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:30:00+09:00",
-            "window_end_jst": "2026-09-17T05:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "in_event_window": false,
+        "active": [],
+        "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Press Conference"
-        ]
+        "reasons": []
       }
     }
   }
