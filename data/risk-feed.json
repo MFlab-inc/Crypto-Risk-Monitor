@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-16T18:32:41+09:00",
-    "generated_intraday": "2026-09-17T04:59:38+09:00",
-    "generated_calendar": "2026-09-17T04:59:38+09:00",
+    "generated_intraday": "2026-09-17T05:03:03+09:00",
+    "generated_calendar": "2026-09-17T05:03:03+09:00",
     "session_date": "2026-09-15",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,8 +72,8 @@
   },
   "market": {
     "dxy": {
-      "value": 100.25,
-      "change": 0.6,
+      "value": 100.26,
+      "change": 0.61,
       "change_pct": 0.61
     },
     "us10y": {
@@ -82,9 +82,9 @@
       "change_pct": 0.2
     },
     "vix": {
-      "value": 17.97,
-      "change": 0.77,
-      "change_pct": 4.48
+      "value": 17.79,
+      "change": 0.59,
+      "change_pct": 3.43
     }
   },
   "pairs": {
@@ -100,48 +100,15 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76095.67,
+        "price": 76043.52,
         "range_today": 1495.94,
         "range_vs_adr": 0.649,
         "spike_flag": false,
-        "updated_at": "2026-09-17T04:59:38+09:00"
+        "updated_at": "2026-09-17T05:03:03+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -155,42 +122,6 @@
           }
         ],
         "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -209,9 +140,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:Federal Funds Rate",
-          "event:FOMC Economic Projections",
-          "event:FOMC Statement",
           "event:FOMC Press Conference"
         ]
       }
@@ -228,48 +156,15 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2409.37,
+        "price": 2406.36,
         "range_today": 61.53,
         "range_vs_adr": 0.619,
         "spike_flag": false,
-        "updated_at": "2026-09-17T04:59:38+09:00"
+        "updated_at": "2026-09-17T05:03:03+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -283,42 +178,6 @@
           }
         ],
         "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -337,9 +196,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:Federal Funds Rate",
-          "event:FOMC Economic Projections",
-          "event:FOMC Statement",
           "event:FOMC Press Conference"
         ]
       }
@@ -360,44 +216,11 @@
         "range_today": 17.14,
         "range_vs_adr": 0.696,
         "spike_flag": false,
-        "updated_at": "2026-09-17T04:59:38+09:00"
+        "updated_at": "2026-09-17T05:03:03+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00"
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -411,42 +234,6 @@
           }
         ],
         "next_48h": [
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Federal Funds Rate",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Economic Projections",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-09-17T03:00:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "FOMC Statement",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-16T03:00:00+09:00",
-            "window_end_jst": "2026-09-17T05:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-09-17T03:30:00+09:00",
             "currency": "USD",
@@ -465,9 +252,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:Federal Funds Rate",
-          "event:FOMC Economic Projections",
-          "event:FOMC Statement",
           "event:FOMC Press Conference"
         ]
       }
