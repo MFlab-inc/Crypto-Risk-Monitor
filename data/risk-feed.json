@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-17T18:40:26+09:00",
-    "generated_intraday": "2026-09-18T01:05:03+09:00",
-    "generated_calendar": "2026-09-18T01:05:03+09:00",
+    "generated_intraday": "2026-09-18T01:22:56+09:00",
+    "generated_calendar": "2026-09-18T01:22:56+09:00",
     "session_date": "2026-09-16",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -68,25 +68,23 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": [
-      "intraday/quote: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON(前回値保持)"
-    ]
+    "errors": []
   },
   "market": {
     "dxy": {
-      "value": 100.22,
-      "change": -0.09,
-      "change_pct": -0.09
+      "value": 100.25,
+      "change": -0.06,
+      "change_pct": -0.06
     },
     "us10y": {
-      "value": 4.947,
-      "change": -0.059,
-      "change_pct": -1.18
+      "value": 4.943,
+      "change": -0.063,
+      "change_pct": -1.26
     },
     "vix": {
-      "value": 15.67,
-      "change": -2.04,
-      "change_pct": -11.52
+      "value": 15.68,
+      "change": -2.03,
+      "change_pct": -11.46
     }
   },
   "pairs": {
@@ -102,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76682.05,
+        "price": 76711.85,
         "range_today": 1179.47,
         "range_vs_adr": 0.521,
         "spike_flag": false,
-        "updated_at": "2026-09-18T00:58:04+09:00"
+        "updated_at": "2026-09-18T01:22:56+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2468.27,
+        "price": 2468.13,
         "range_today": 70.18,
         "range_vs_adr": 0.715,
         "spike_flag": false,
-        "updated_at": "2026-09-18T00:58:04+09:00"
+        "updated_at": "2026-09-18T01:22:56+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -160,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 727.34,
+        "price": 727.52,
         "range_today": 11.65,
         "range_vs_adr": 0.466,
         "spike_flag": false,
-        "updated_at": "2026-09-18T00:58:04+09:00"
+        "updated_at": "2026-09-18T01:22:56+09:00"
       },
       "events": {
         "in_event_window": false,
