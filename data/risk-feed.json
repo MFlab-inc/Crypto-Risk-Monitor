@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-18T18:13:54+09:00",
-    "generated_intraday": "2026-09-19T03:28:59+09:00",
-    "generated_calendar": "2026-09-19T03:28:59+09:00",
+    "generated_intraday": "2026-09-19T03:34:59+09:00",
+    "generated_calendar": "2026-09-19T03:34:59+09:00",
     "session_date": "2026-09-17",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": 1.07
     },
     "vix": {
-      "value": 15.24,
-      "change": -0.2,
-      "change_pct": -1.3
+      "value": 15.19,
+      "change": -0.25,
+      "change_pct": -1.62
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 80972.01,
+        "price": 81026.83,
         "range_today": 4962.01,
         "range_vs_adr": 2.372,
         "spike_flag": true,
-        "updated_at": "2026-09-19T03:28:59+09:00"
+        "updated_at": "2026-09-19T03:34:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2608.87,
-        "range_today": 175.11,
-        "range_vs_adr": 1.839,
+        "price": 2612.5,
+        "range_today": 184,
+        "range_vs_adr": 1.932,
         "spike_flag": true,
-        "updated_at": "2026-09-19T03:28:59+09:00"
+        "updated_at": "2026-09-19T03:34:59+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -162,11 +162,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 762.24,
-        "range_today": 27.4,
-        "range_vs_adr": 1.131,
+        "price": 762.71,
+        "range_today": 28.71,
+        "range_vs_adr": 1.185,
         "spike_flag": false,
-        "updated_at": "2026-09-19T03:28:59+09:00"
+        "updated_at": "2026-09-19T03:34:59+09:00"
       },
       "events": {
         "in_event_window": false,
