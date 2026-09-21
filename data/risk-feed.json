@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-21T19:14:28+09:00",
-    "generated_intraday": "2026-09-22T05:04:16+09:00",
-    "generated_calendar": "2026-09-22T05:04:16+09:00",
+    "generated_intraday": "2026-09-22T05:22:44+09:00",
+    "generated_calendar": "2026-09-22T05:22:44+09:00",
     "session_date": "2026-09-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 100.41,
-      "change": 0.19,
-      "change_pct": 0.19
+      "value": 100.43,
+      "change": 0.21,
+      "change_pct": 0.21
     },
     "us10y": {
       "value": 4.963,
@@ -82,9 +82,9 @@
       "change_pct": -0.7
     },
     "vix": {
-      "value": 14.85,
-      "change": 0.04,
-      "change_pct": 0.27
+      "value": 14.81,
+      "change": 0,
+      "change_pct": 0
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 86663.75,
-        "range_today": 6045.48,
-        "range_vs_adr": 2.734,
+        "price": 86995.63,
+        "range_today": 6163.36,
+        "range_vs_adr": 2.787,
         "spike_flag": true,
-        "updated_at": "2026-09-22T05:04:16+09:00"
+        "updated_at": "2026-09-22T05:22:44+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2767.36,
-        "range_today": 132.6,
-        "range_vs_adr": 1.327,
-        "spike_flag": false,
-        "updated_at": "2026-09-22T05:04:16+09:00"
+        "price": 2797.46,
+        "range_today": 159.29,
+        "range_vs_adr": 1.594,
+        "spike_flag": true,
+        "updated_at": "2026-09-22T05:22:44+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -143,9 +143,11 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": false,
-        "halt_all_new": false,
-        "reasons": []
+        "no_new_grid": true,
+        "halt_all_new": true,
+        "reasons": [
+          "spike:range_vs_adr"
+        ]
       }
     },
     "BNBUSD": {
@@ -160,11 +162,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 800.07,
+        "price": 805.03,
         "range_today": 41.48,
         "range_vs_adr": 1.589,
         "spike_flag": true,
-        "updated_at": "2026-09-22T05:04:16+09:00"
+        "updated_at": "2026-09-22T05:22:44+09:00"
       },
       "events": {
         "in_event_window": false,
