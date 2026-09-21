@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-21T13:47:14+09:00",
-    "generated_intraday": "2026-09-21T13:34:12+09:00",
-    "generated_calendar": "2026-09-21T13:47:14+09:00",
+    "generated_intraday": "2026-09-21T13:52:15+09:00",
+    "generated_calendar": "2026-09-21T13:52:15+09:00",
     "session_date": "2026-09-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 100.32,
-      "change": 0.1,
-      "change_pct": 0.1
+      "value": 100.3,
+      "change": 0.08,
+      "change_pct": 0.08
     },
     "us10y": {
       "value": 4.998,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 81261.08,
+        "price": 81498.69,
         "range_today": 1249.78,
-        "range_vs_adr": 0.559,
+        "range_vs_adr": 0.565,
         "spike_flag": false,
-        "updated_at": "2026-09-21T13:34:12+09:00"
+        "updated_at": "2026-09-21T13:52:15+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2654.95,
+        "price": 2669.15,
         "range_today": 63.99,
-        "range_vs_adr": 0.639,
+        "range_vs_adr": 0.64,
         "spike_flag": false,
-        "updated_at": "2026-09-21T13:34:12+09:00"
+        "updated_at": "2026-09-21T13:52:15+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 772.47,
+        "price": 775.29,
         "range_today": 12.84,
-        "range_vs_adr": 0.511,
+        "range_vs_adr": 0.492,
         "spike_flag": false,
-        "updated_at": "2026-09-21T13:34:12+09:00"
+        "updated_at": "2026-09-21T13:52:15+09:00"
       },
       "events": {
         "in_event_window": false,
