@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-21T19:14:28+09:00",
-    "generated_intraday": "2026-09-22T00:59:18+09:00",
-    "generated_calendar": "2026-09-22T00:59:18+09:00",
+    "generated_intraday": "2026-09-22T01:02:34+09:00",
+    "generated_calendar": "2026-09-22T01:02:34+09:00",
     "session_date": "2026-09-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -77,14 +77,14 @@
       "change_pct": 0.19
     },
     "us10y": {
-      "value": 4.963,
-      "change": -0.035,
-      "change_pct": -0.7
+      "value": 4.961,
+      "change": -0.037,
+      "change_pct": -0.74
     },
     "vix": {
-      "value": 14.88,
-      "change": 0.07,
-      "change_pct": 0.47
+      "value": 14.91,
+      "change": 0.1,
+      "change_pct": 0.68
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 85950,
+        "price": 85900,
         "range_today": 5494.48,
         "range_vs_adr": 2.485,
         "spike_flag": true,
-        "updated_at": "2026-09-22T00:59:18+09:00"
+        "updated_at": "2026-09-22T01:02:34+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2756.38,
+        "price": 2753.83,
         "range_today": 121.72,
         "range_vs_adr": 1.218,
         "spike_flag": false,
-        "updated_at": "2026-09-22T00:59:18+09:00"
+        "updated_at": "2026-09-22T01:02:34+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -160,11 +160,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 803.38,
+        "price": 802.28,
         "range_today": 41.48,
         "range_vs_adr": 1.589,
         "spike_flag": true,
-        "updated_at": "2026-09-22T00:59:18+09:00"
+        "updated_at": "2026-09-22T01:02:34+09:00"
       },
       "events": {
         "in_event_window": false,
