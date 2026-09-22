@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-22T18:29:43+09:00",
-    "generated_intraday": "2026-09-22T21:57:15+09:00",
-    "generated_calendar": "2026-09-22T21:57:15+09:00",
+    "generated_intraday": "2026-09-22T21:59:17+09:00",
+    "generated_calendar": "2026-09-22T21:59:17+09:00",
     "session_date": "2026-09-21",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,14 +72,14 @@
   },
   "market": {
     "dxy": {
-      "value": 100.44,
-      "change": 0.01,
-      "change_pct": 0.01
+      "value": 100.45,
+      "change": 0.02,
+      "change_pct": 0.02
     },
     "us10y": {
-      "value": 4.933,
-      "change": -0.03,
-      "change_pct": -0.6
+      "value": 4.937,
+      "change": -0.026,
+      "change_pct": -0.52
     },
     "vix": {
       "value": 14.66,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 85988.52,
+        "price": 86018.79,
         "range_today": 1511.82,
         "range_vs_adr": 0.63,
         "spike_flag": false,
-        "updated_at": "2026-09-22T21:57:15+09:00"
+        "updated_at": "2026-09-22T21:59:17+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2753.69,
+        "price": 2754.86,
         "range_today": 61.64,
         "range_vs_adr": 0.598,
         "spike_flag": false,
-        "updated_at": "2026-09-22T21:57:15+09:00"
+        "updated_at": "2026-09-22T21:59:17+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 789.67,
+        "price": 790.84,
         "range_today": 19.62,
         "range_vs_adr": 0.722,
         "spike_flag": false,
-        "updated_at": "2026-09-22T21:57:15+09:00"
+        "updated_at": "2026-09-22T21:59:17+09:00"
       },
       "events": {
         "in_event_window": false,
