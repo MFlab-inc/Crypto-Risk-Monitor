@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-25T13:47:58+09:00",
-    "generated_intraday": "2026-09-25T17:22:54+09:00",
-    "generated_calendar": "2026-09-25T17:22:54+09:00",
+    "generated_intraday": "2026-09-25T17:28:53+09:00",
+    "generated_calendar": "2026-09-25T17:28:53+09:00",
     "session_date": "2026-09-24",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,7 +74,7 @@
     "dxy": {
       "value": 101.11,
       "change": -0.18,
-      "change_pct": -0.18
+      "change_pct": -0.17
     },
     "us10y": {
       "value": 5.162,
@@ -82,9 +82,9 @@
       "change_pct": 0.94
     },
     "vix": {
-      "value": 15.64,
-      "change": -0.03,
-      "change_pct": -0.19
+      "value": 15.57,
+      "change": -0.1,
+      "change_pct": -0.64
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 84356.97,
+        "price": 84435.7,
         "range_today": 1137.5,
         "range_vs_adr": 0.497,
         "spike_flag": false,
-        "updated_at": "2026-09-25T17:22:54+09:00"
+        "updated_at": "2026-09-25T17:28:53+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2690.59,
+        "price": 2695.31,
         "range_today": 32.88,
         "range_vs_adr": 0.323,
         "spike_flag": false,
-        "updated_at": "2026-09-25T17:22:54+09:00"
+        "updated_at": "2026-09-25T17:28:53+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 776.12,
+        "price": 776.68,
         "range_today": 9.32,
         "range_vs_adr": 0.334,
         "spike_flag": false,
-        "updated_at": "2026-09-25T17:22:54+09:00"
+        "updated_at": "2026-09-25T17:28:53+09:00"
       },
       "events": {
         "in_event_window": false,
