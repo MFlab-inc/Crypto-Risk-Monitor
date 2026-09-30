@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-09-30T13:47:25+09:00",
+    "generated_daily": "2026-09-30T19:45:56+09:00",
     "generated_intraday": "2026-09-30T19:34:25+09:00",
-    "generated_calendar": "2026-09-30T19:34:25+09:00",
+    "generated_calendar": "2026-09-30T19:45:56+09:00",
     "session_date": "2026-09-29",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": 0.29
     },
     "vix": {
-      "value": 16.04,
-      "change": 0,
-      "change_pct": 0
+      "value": 16.08,
+      "change": 0.04,
+      "change_pct": 0.25
     }
   },
   "pairs": {
@@ -119,6 +119,17 @@
             ],
             "window_start_jst": "2026-09-30T09:15:00+09:00",
             "window_end_jst": "2026-09-30T22:15:00+09:00"
+          },
+          {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00"
           }
         ],
         "next_48h": [
@@ -155,6 +166,18 @@
             "gating": false
           },
           {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00",
+            "gating": true
+          },
+          {
             "time_jst": "2026-10-01T23:00:00+09:00",
             "currency": "USD",
             "impact": "Medium",
@@ -172,7 +195,8 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change"
+          "event:ADP Non-Farm Employment Change",
+          "event:FOMC Member Kashkari Speaks"
         ]
       }
     },
@@ -207,6 +231,17 @@
             ],
             "window_start_jst": "2026-09-30T09:15:00+09:00",
             "window_end_jst": "2026-09-30T22:15:00+09:00"
+          },
+          {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00"
           }
         ],
         "next_48h": [
@@ -243,6 +278,18 @@
             "gating": false
           },
           {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00",
+            "gating": true
+          },
+          {
             "time_jst": "2026-10-01T23:00:00+09:00",
             "currency": "USD",
             "impact": "Medium",
@@ -260,7 +307,8 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change"
+          "event:ADP Non-Farm Employment Change",
+          "event:FOMC Member Kashkari Speaks"
         ]
       }
     },
@@ -295,6 +343,17 @@
             ],
             "window_start_jst": "2026-09-30T09:15:00+09:00",
             "window_end_jst": "2026-09-30T22:15:00+09:00"
+          },
+          {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00"
           }
         ],
         "next_48h": [
@@ -331,6 +390,18 @@
             "gating": false
           },
           {
+            "time_jst": "2026-10-01T07:00:00+09:00",
+            "currency": "USD",
+            "impact": "Medium",
+            "title": "FOMC Member Kashkari Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-09-30T07:00:00+09:00",
+            "window_end_jst": "2026-10-01T09:00:00+09:00",
+            "gating": true
+          },
+          {
             "time_jst": "2026-10-01T23:00:00+09:00",
             "currency": "USD",
             "impact": "Medium",
@@ -348,7 +419,8 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change"
+          "event:ADP Non-Farm Employment Change",
+          "event:FOMC Member Kashkari Speaks"
         ]
       }
     }
