@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-30T19:45:56+09:00",
-    "generated_intraday": "2026-09-30T22:06:24+09:00",
-    "generated_calendar": "2026-09-30T22:06:24+09:00",
+    "generated_intraday": "2026-09-30T22:22:30+09:00",
+    "generated_calendar": "2026-09-30T22:22:30+09:00",
     "session_date": "2026-09-29",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 101.12,
-      "change": -0.25,
-      "change_pct": -0.25
+      "value": 101.18,
+      "change": -0.19,
+      "change_pct": -0.19
     },
     "us10y": {
-      "value": 5.243,
-      "change": -0.012,
-      "change_pct": -0.23
+      "value": 5.22,
+      "change": -0.035,
+      "change_pct": -0.67
     },
     "vix": {
-      "value": 15.89,
-      "change": -0.15,
-      "change_pct": -0.94
+      "value": 15.76,
+      "change": -0.28,
+      "change_pct": -1.75
     }
   },
   "pairs": {
@@ -100,26 +100,15 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 85238.39,
-        "range_today": 2557.89,
-        "range_vs_adr": 1.11,
+        "price": 85335.73,
+        "range_today": 2693.84,
+        "range_vs_adr": 1.169,
         "spike_flag": false,
-        "updated_at": "2026-09-30T22:06:24+09:00"
+        "updated_at": "2026-09-30T22:22:30+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-30T21:15:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "ADP Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-30T09:15:00+09:00",
-            "window_end_jst": "2026-09-30T22:15:00+09:00"
-          },
           {
             "time_jst": "2026-10-01T07:00:00+09:00",
             "currency": "USD",
@@ -231,7 +220,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change",
           "event:FOMC Member Kashkari Speaks"
         ]
       }
@@ -248,26 +236,15 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2731.12,
+        "price": 2726.4,
         "range_today": 81.59,
         "range_vs_adr": 0.797,
         "spike_flag": false,
-        "updated_at": "2026-09-30T22:06:24+09:00"
+        "updated_at": "2026-09-30T22:22:30+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-30T21:15:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "ADP Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-30T09:15:00+09:00",
-            "window_end_jst": "2026-09-30T22:15:00+09:00"
-          },
           {
             "time_jst": "2026-10-01T07:00:00+09:00",
             "currency": "USD",
@@ -379,7 +356,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change",
           "event:FOMC Member Kashkari Speaks"
         ]
       }
@@ -396,26 +372,15 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 776.69,
-        "range_today": 21.57,
-        "range_vs_adr": 0.912,
+        "price": 775.51,
+        "range_today": 23.25,
+        "range_vs_adr": 0.984,
         "spike_flag": false,
-        "updated_at": "2026-09-30T22:06:24+09:00"
+        "updated_at": "2026-09-30T22:22:30+09:00"
       },
       "events": {
         "in_event_window": true,
         "active": [
-          {
-            "time_jst": "2026-09-30T21:15:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "ADP Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-09-30T09:15:00+09:00",
-            "window_end_jst": "2026-09-30T22:15:00+09:00"
-          },
           {
             "time_jst": "2026-10-01T07:00:00+09:00",
             "currency": "USD",
@@ -527,7 +492,6 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:ADP Non-Farm Employment Change",
           "event:FOMC Member Kashkari Speaks"
         ]
       }
