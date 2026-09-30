@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-09-30T13:47:25+09:00",
-    "generated_intraday": "2026-09-30T15:35:07+09:00",
-    "generated_calendar": "2026-09-30T15:35:07+09:00",
+    "generated_intraday": "2026-09-30T15:52:23+09:00",
+    "generated_calendar": "2026-09-30T15:52:23+09:00",
     "session_date": "2026-09-29",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 101.25,
-      "change": -0.12,
-      "change_pct": -0.12
+      "value": 101.31,
+      "change": -0.06,
+      "change_pct": -0.06
     },
     "us10y": {
       "value": 5.255,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83100,
-        "range_today": 673.29,
-        "range_vs_adr": 0.292,
+        "price": 83005.35,
+        "range_today": 751.46,
+        "range_vs_adr": 0.326,
         "spike_flag": false,
-        "updated_at": "2026-09-30T15:35:07+09:00"
+        "updated_at": "2026-09-30T15:52:23+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -188,11 +188,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2662.58,
-        "range_today": 18.04,
-        "range_vs_adr": 0.176,
+        "price": 2661.08,
+        "range_today": 23.7,
+        "range_vs_adr": 0.232,
         "spike_flag": false,
-        "updated_at": "2026-09-30T15:35:07+09:00"
+        "updated_at": "2026-09-30T15:52:23+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -276,11 +276,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 759.01,
-        "range_today": 8.25,
-        "range_vs_adr": 0.349,
+        "price": 757.23,
+        "range_today": 8.87,
+        "range_vs_adr": 0.375,
         "spike_flag": false,
-        "updated_at": "2026-09-30T15:35:07+09:00"
+        "updated_at": "2026-09-30T15:52:23+09:00"
       },
       "events": {
         "in_event_window": true,
