@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-01T20:11:55+09:00",
-    "generated_intraday": "2026-10-01T22:22:48+09:00",
-    "generated_calendar": "2026-10-01T22:22:48+09:00",
+    "generated_intraday": "2026-10-01T22:28:48+09:00",
+    "generated_calendar": "2026-10-01T22:28:48+09:00",
     "session_date": "2026-09-30",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,12 +74,12 @@
     "dxy": {
       "value": 101.81,
       "change": 0.36,
-      "change_pct": 0.35
+      "change_pct": 0.36
     },
     "us10y": {
-      "value": 5.302,
-      "change": 0.009,
-      "change_pct": 0.17
+      "value": 5.306,
+      "change": 0.013,
+      "change_pct": 0.25
     },
     "vix": {
       "value": 16.36,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83607.11,
+        "price": 83496.28,
         "range_today": 1233.69,
         "range_vs_adr": 0.529,
         "spike_flag": false,
-        "updated_at": "2026-10-01T22:22:48+09:00"
+        "updated_at": "2026-10-01T22:28:48+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -192,11 +192,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2688.05,
+        "price": 2685.4,
         "range_today": 48.87,
         "range_vs_adr": 0.477,
         "spike_flag": false,
-        "updated_at": "2026-10-01T22:22:48+09:00"
+        "updated_at": "2026-10-01T22:28:48+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -284,11 +284,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 768.04,
+        "price": 766.64,
         "range_today": 9.48,
         "range_vs_adr": 0.401,
         "spike_flag": false,
-        "updated_at": "2026-10-01T22:22:48+09:00"
+        "updated_at": "2026-10-01T22:28:48+09:00"
       },
       "events": {
         "in_event_window": true,
