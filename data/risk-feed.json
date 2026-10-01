@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-01T20:11:55+09:00",
-    "generated_intraday": "2026-10-02T00:59:49+09:00",
-    "generated_calendar": "2026-10-02T00:59:49+09:00",
+    "generated_intraday": "2026-10-02T01:02:51+09:00",
+    "generated_calendar": "2026-10-02T01:02:51+09:00",
     "session_date": "2026-09-30",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 102.06,
-      "change": 0.61,
-      "change_pct": 0.6
+      "value": 102.08,
+      "change": 0.63,
+      "change_pct": 0.62
     },
     "us10y": {
-      "value": 5.255,
-      "change": -0.038,
-      "change_pct": -0.72
+      "value": 5.251,
+      "change": -0.042,
+      "change_pct": -0.79
     },
     "vix": {
-      "value": 17.41,
-      "change": 1.07,
-      "change_pct": 6.55
+      "value": 17.25,
+      "change": 0.91,
+      "change_pct": 5.57
     }
   },
   "pairs": {
@@ -100,40 +100,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 84106.01,
+        "price": 84202.01,
         "range_today": 1558,
         "range_vs_adr": 0.668,
         "spike_flag": false,
-        "updated_at": "2026-10-02T00:59:49+09:00"
+        "updated_at": "2026-10-02T01:02:51+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00"
-          }
-        ],
+        "in_event_window": false,
+        "active": [],
         "next_48h": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-10-02T21:30:00+09:00",
             "currency": "USD",
@@ -173,11 +149,9 @@
         ]
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Member Waller Speaks"
-        ]
+        "reasons": []
       }
     },
     "ETHUSD": {
@@ -192,40 +166,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2681.39,
+        "price": 2685.1,
         "range_today": 48.87,
         "range_vs_adr": 0.477,
         "spike_flag": false,
-        "updated_at": "2026-10-02T00:59:49+09:00"
+        "updated_at": "2026-10-02T01:02:51+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00"
-          }
-        ],
+        "in_event_window": false,
+        "active": [],
         "next_48h": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-10-02T21:30:00+09:00",
             "currency": "USD",
@@ -265,11 +215,9 @@
         ]
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Member Waller Speaks"
-        ]
+        "reasons": []
       }
     },
     "BNBUSD": {
@@ -284,40 +232,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 765.82,
+        "price": 767,
         "range_today": 9.48,
         "range_vs_adr": 0.401,
         "spike_flag": false,
-        "updated_at": "2026-10-02T00:59:49+09:00"
+        "updated_at": "2026-10-02T01:02:51+09:00"
       },
       "events": {
-        "in_event_window": true,
-        "active": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00"
-          }
-        ],
+        "in_event_window": false,
+        "active": [],
         "next_48h": [
-          {
-            "time_jst": "2026-10-01T23:00:00+09:00",
-            "currency": "USD",
-            "impact": "Medium",
-            "title": "FOMC Member Waller Speaks",
-            "types": [
-              "fomc"
-            ],
-            "window_start_jst": "2026-09-30T23:00:00+09:00",
-            "window_end_jst": "2026-10-02T01:00:00+09:00",
-            "gating": true
-          },
           {
             "time_jst": "2026-10-02T21:30:00+09:00",
             "currency": "USD",
@@ -357,11 +281,9 @@
         ]
       },
       "flags": {
-        "no_new_grid": true,
+        "no_new_grid": false,
         "halt_all_new": false,
-        "reasons": [
-          "event:FOMC Member Waller Speaks"
-        ]
+        "reasons": []
       }
     }
   }
