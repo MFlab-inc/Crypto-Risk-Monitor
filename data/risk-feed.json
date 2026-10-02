@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-02T19:44:56+09:00",
-    "generated_intraday": "2026-10-03T03:02:45+09:00",
-    "generated_calendar": "2026-10-03T03:02:45+09:00",
+    "generated_intraday": "2026-10-03T03:04:47+09:00",
+    "generated_calendar": "2026-10-03T03:04:47+09:00",
     "session_date": "2026-10-01",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,8 +72,8 @@
   },
   "market": {
     "dxy": {
-      "value": 101.91,
-      "change": -0.19,
+      "value": 101.92,
+      "change": -0.18,
       "change_pct": -0.18
     },
     "us10y": {
@@ -82,9 +82,9 @@
       "change_pct": 0.88
     },
     "vix": {
-      "value": 15.75,
-      "change": -0.64,
-      "change_pct": -3.9
+      "value": 15.72,
+      "change": -0.67,
+      "change_pct": -4.09
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 84853.91,
+        "price": 84834.71,
         "range_today": 2920,
         "range_vs_adr": 1.3,
         "spike_flag": false,
-        "updated_at": "2026-10-03T03:02:45+09:00"
+        "updated_at": "2026-10-03T03:04:47+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2687.86,
+        "price": 2685.79,
         "range_today": 99.86,
         "range_vs_adr": 1.07,
         "spike_flag": false,
-        "updated_at": "2026-10-03T03:02:45+09:00"
+        "updated_at": "2026-10-03T03:04:47+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 774.21,
+        "price": 773.73,
         "range_today": 16.16,
         "range_vs_adr": 0.719,
         "spike_flag": false,
-        "updated_at": "2026-10-03T03:02:45+09:00"
+        "updated_at": "2026-10-03T03:04:47+09:00"
       },
       "events": {
         "in_event_window": false,
