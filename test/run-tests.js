@@ -13,6 +13,12 @@ const { lastCompletedSessionDate } = require("../scripts/lib/session");
 const { parseCsv } = require("../scripts/lib/csv");
 const { initFeedSkeleton, applyDaily, applyIntraday } = require("../scripts/lib/feed");
 const { loadConfigs } = require("../scripts/lib/util");
+const fs = require("fs");
+const os = require("os");
+const path = require("path");
+const {
+  START_MONTH, extractMonthOpens, mergeMonthOpens, validateMonthTable, applyCandidates,
+} = require("../scripts/month-open");
 
 let passed = 0, failed = 0;
 function t(name, fn) {
@@ -321,6 +327,136 @@ t("applyDaily: 丸め桁とdata_ok", () => {
   assert.strictEqual(p.rv20, 45.88);
   assert.strictEqual(p.atr_pct_percentile_250, 62.3);
   assert.strictEqual(p.data_ok, true);
+});
+
+// ---------- month-open ----------
+console.log("[month-open]");
+
+const mo = (date, open) => ({ date, open, high: open, low: open, close: open });
+/** 月初バー+月中バーを含む合成bars(2025-03〜2025-07) */
+const moBars = [
+  mo("2025-03-01", 1800), mo("2025-03-02", 1801),
+  mo("2025-04-01", 1822.43), mo("2025-04-02", 1830),
+  mo("2025-05-01", 1793.62), mo("2025-05-15", 1900),
+  mo("2025-06-01", 2528.05), mo("2025-07-01", 2485.46),
+];
+const tmpTable = () => path.join(fs.mkdtempSync(path.join(os.tmpdir(), "month-open-")), "ETHUSD-month-open.json");
+
+t("月初バーだけ拾い、START_MONTHより前の月は無視する", () => {
+  const c = extractMonthOpens(moBars);
+  assert.deepStrictEqual(Object.keys(c), ["2025-04", "2025-05", "2025-06", "2025-07"]);
+  assert.deepStrictEqual(c["2025-04"], { date: "2025-04-01", open: 1822.43 });
+});
+
+t("月初バーの始値が不正ならエラー", () => {
+  assert.throws(() => extractMonthOpens([mo("2025-04-01", 0)]), /始値が不正/);
+  assert.throws(() => extractMonthOpens([mo("2025-04-01", NaN)]), /始値が不正/);
+});
+
+t("merge: 無い月だけ追加し、既存月は上書きしない", () => {
+  const existing = { "2025-04": { date: "2025-04-01", open: 1822.43 } };
+  const cand = extractMonthOpens(moBars);
+  cand["2025-04"] = { date: "2025-04-01", open: 1825 }; // +0.14%(許容内)
+  const r = mergeMonthOpens(existing, cand);
+  assert.deepStrictEqual(r.added, ["2025-05", "2025-06", "2025-07"]);
+  assert.strictEqual(r.months["2025-04"].open, 1822.43);
+  assert.strictEqual(r.conflicts.length, 0);
+  assert.strictEqual(r.withinTolerance.length, 1);
+});
+
+t("merge: 差が0.5%ちょうどは許容・超えたらconflict", () => {
+  const existing = { "2025-04": { date: "2025-04-01", open: 1000 } };
+  const ok = mergeMonthOpens(existing, { "2025-04": { date: "2025-04-01", open: 1005 } });
+  assert.strictEqual(ok.conflicts.length, 0);
+  const ng = mergeMonthOpens(existing, { "2025-04": { date: "2025-04-01", open: 1005.01 } });
+  assert.strictEqual(ng.conflicts.length, 1);
+  assert.strictEqual(ng.months["2025-04"].open, 1000);
+});
+
+t("検証: 開始月から欠けなく連続していればOK(年またぎ含む)", () => {
+  const months = {};
+  for (const m of ["2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10",
+    "2025-11", "2025-12", "2026-01", "2026-02"]) months[m] = { date: `${m}-01`, open: 2000 };
+  const v = validateMonthTable(months);
+  assert.ok(v.ok, v.errors.join(","));
+  assert.strictEqual(v.first, "2025-04");
+  assert.strictEqual(v.last, "2026-02");
+});
+
+t("検証: 途中の月が欠けていたらNG", () => {
+  const months = {
+    "2025-04": { date: "2025-04-01", open: 1 }, "2025-06": { date: "2025-06-01", open: 1 },
+  };
+  const v = validateMonthTable(months);
+  assert.ok(!v.ok);
+  assert.ok(v.errors.some((e) => e.includes("2025-05")));
+});
+
+t("検証: START_MONTHより後の月から始まる表はNG(連続していても)", () => {
+  const months = {
+    "2025-05": { date: "2025-05-01", open: 1 }, "2025-06": { date: "2025-06-01", open: 1 },
+  };
+  const v = validateMonthTable(months);
+  assert.ok(!v.ok);
+  assert.ok(v.errors.some((e) => e.includes(`開始月が ${START_MONTH}`)));
+});
+
+t("検証: dateが月初でない・openが不正ならNG", () => {
+  assert.ok(!validateMonthTable({ "2025-04": { date: "2025-04-02", open: 1 } }).ok);
+  assert.ok(!validateMonthTable({ "2025-04": { date: "2025-04-01", open: -5 } }).ok);
+});
+
+t("backfill: 取得結果に2025-04-01が無ければ保存せずエラー", () => {
+  const file = tmpTable();
+  const cand = extractMonthOpens(moBars.filter((b) => !b.date.startsWith("2025-04")));
+  assert.throws(() => applyCandidates({ tablePath: file, candidates: cand, backfill: true, symbol: "ETH/USD", log: () => {} }), /2025-04-01 が含まれていません/);
+  assert.ok(!fs.existsSync(file));
+});
+
+t("backfill: 途中の月が欠けた取得結果は保存せずエラー", () => {
+  const file = tmpTable();
+  const cand = extractMonthOpens(moBars.filter((b) => !b.date.startsWith("2025-05")));
+  assert.throws(() => applyCandidates({ tablePath: file, candidates: cand, backfill: true, symbol: "ETH/USD", log: () => {} }), /2025-05/);
+  assert.ok(!fs.existsSync(file));
+});
+
+t("backfill成功→通常モードで新しい月だけ追記・追加なしなら書き換えない", () => {
+  const file = tmpTable();
+  const first = applyCandidates({ tablePath: file, candidates: extractMonthOpens(moBars), backfill: true, symbol: "ETH/USD", log: () => {} });
+  assert.ok(first.saved);
+  assert.deepStrictEqual(first.added, ["2025-04", "2025-05", "2025-06", "2025-07"]);
+  const saved = JSON.parse(fs.readFileSync(file, "utf8"));
+  assert.strictEqual(saved.pair, "ETHUSD");
+  assert.strictEqual(saved.source, "Twelve Data ETH/USD 1day (UTC)");
+  assert.strictEqual(saved.rule, "各月1日(UTC)の日足始値");
+  assert.deepStrictEqual(saved.months["2025-05"], { date: "2025-05-01", open: 1793.62 });
+
+  const before = fs.readFileSync(file, "utf8");
+  const same = applyCandidates({ tablePath: file, candidates: extractMonthOpens(moBars), symbol: "ETH/USD", log: () => {} });
+  assert.ok(!same.saved);
+  assert.strictEqual(fs.readFileSync(file, "utf8"), before);
+
+  const next = applyCandidates({
+    tablePath: file, symbol: "ETH/USD", log: () => {},
+    candidates: extractMonthOpens([...moBars, mo("2025-08-01", 3697.93)]),
+  });
+  assert.deepStrictEqual(next.added, ["2025-08"]);
+  assert.strictEqual(JSON.parse(fs.readFileSync(file, "utf8")).months["2025-04"].open, 1822.43);
+});
+
+t("既存値と0.5%超ずれたら上書きせずエラー(ファイルは変わらない)", () => {
+  const file = tmpTable();
+  applyCandidates({ tablePath: file, candidates: extractMonthOpens(moBars), backfill: true, symbol: "ETH/USD", log: () => {} });
+  const before = fs.readFileSync(file, "utf8");
+  const drifted = moBars.map((b) => (b.date === "2025-06-01" ? mo("2025-06-01", 2528.05 * 1.01) : b));
+  assert.throws(() => applyCandidates({ tablePath: file, candidates: extractMonthOpens([...drifted, mo("2025-08-01", 3700)]), symbol: "ETH/USD", log: () => {} }), /2025-06/);
+  assert.strictEqual(fs.readFileSync(file, "utf8"), before);
+});
+
+t("通常モードで表が無ければエラー(先にbackfillを要求)", () => {
+  const file = tmpTable();
+  assert.throws(() => applyCandidates({ tablePath: file, candidates: extractMonthOpens(moBars), symbol: "ETH/USD", log: () => {} }), /month-open-backfill/);
+  assert.ok(!fs.existsSync(file));
 });
 
 // ---------- 結果 ----------

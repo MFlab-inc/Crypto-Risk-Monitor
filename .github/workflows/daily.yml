@@ -35,3 +35,22 @@ jobs:
           git add data/
           git diff --cached --quiet || git commit -m "daily: $(TZ=Asia/Tokyo date +%Y-%m-%d)"
           git push || (git pull --rebase -X theirs origin main && git push)
+
+      # 月初始値の固定表の追記(API消費なし)。失敗しても上の日次フィード生成・コミットには影響しない。
+      - name: Update month-open table
+        id: month_open
+        continue-on-error: true
+        run: node scripts/month-open.js
+
+      - name: Warn if month-open failed
+        if: steps.month_open.outcome == 'failure'
+        run: echo "::warning title=month-open::月初始値の表の更新に失敗しました(日次フィードには影響ありません)。Update month-open table のログを確認してください"
+
+      - name: Commit and push month-open table
+        if: steps.month_open.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/ETHUSD-month-open.json
+          git diff --cached --quiet || git commit -m "month-open: $(TZ=Asia/Tokyo date +%Y-%m-%d)"
+          git push || (git pull --rebase -X theirs origin main && git push)
