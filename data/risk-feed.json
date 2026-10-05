@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-05T13:47:44+09:00",
-    "generated_intraday": "2026-10-05T13:34:45+09:00",
-    "generated_calendar": "2026-10-05T13:47:44+09:00",
+    "generated_intraday": "2026-10-05T13:52:42+09:00",
+    "generated_calendar": "2026-10-05T13:52:42+09:00",
     "session_date": "2026-10-04",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 102.46,
-      "change": 0.53,
-      "change_pct": 0.52
+      "value": 102.44,
+      "change": 0.51,
+      "change_pct": 0.5
     },
     "us10y": {
       "value": 5.277,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 85608.57,
+        "price": 85579.75,
         "range_today": 1514.11,
-        "range_vs_adr": 0.638,
+        "range_vs_adr": 0.654,
         "spike_flag": false,
-        "updated_at": "2026-10-05T13:34:45+09:00"
+        "updated_at": "2026-10-05T13:52:42+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2703.85,
+        "price": 2704.66,
         "range_today": 39.53,
-        "range_vs_adr": 0.413,
+        "range_vs_adr": 0.435,
         "spike_flag": false,
-        "updated_at": "2026-10-05T13:34:45+09:00"
+        "updated_at": "2026-10-05T13:52:42+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 789.61,
+        "price": 789.83,
         "range_today": 21.68,
-        "range_vs_adr": 0.922,
+        "range_vs_adr": 0.93,
         "spike_flag": false,
-        "updated_at": "2026-10-05T13:34:45+09:00"
+        "updated_at": "2026-10-05T13:52:42+09:00"
       },
       "events": {
         "in_event_window": false,
