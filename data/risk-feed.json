@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-07T13:47:35+09:00",
-    "generated_intraday": "2026-10-07T19:04:40+09:00",
-    "generated_calendar": "2026-10-07T19:04:40+09:00",
+    "generated_intraday": "2026-10-07T19:22:42+09:00",
+    "generated_calendar": "2026-10-07T19:22:42+09:00",
     "session_date": "2026-10-06",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 102.29,
-      "change": 0.46,
-      "change_pct": 0.45
+      "value": 102.3,
+      "change": 0.47,
+      "change_pct": 0.46
     },
     "us10y": {
       "value": 5.269,
@@ -82,9 +82,9 @@
       "change_pct": -0.79
     },
     "vix": {
-      "value": 15.42,
-      "change": 0.41,
-      "change_pct": 2.73
+      "value": 15.5,
+      "change": 0.49,
+      "change_pct": 3.26
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83722.01,
-        "range_today": 2021.22,
-        "range_vs_adr": 0.896,
+        "price": 83915.31,
+        "range_today": 2156.22,
+        "range_vs_adr": 0.956,
         "spike_flag": false,
-        "updated_at": "2026-10-07T19:04:40+09:00"
+        "updated_at": "2026-10-07T19:22:42+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -180,11 +180,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2594.74,
-        "range_today": 108.09,
-        "range_vs_adr": 1.276,
-        "spike_flag": false,
-        "updated_at": "2026-10-07T19:04:40+09:00"
+        "price": 2590.13,
+        "range_today": 134.79,
+        "range_vs_adr": 1.592,
+        "spike_flag": true,
+        "updated_at": "2026-10-07T19:22:42+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -241,8 +241,9 @@
       },
       "flags": {
         "no_new_grid": true,
-        "halt_all_new": false,
+        "halt_all_new": true,
         "reasons": [
+          "spike:range_vs_adr",
           "event:FOMC Meeting Minutes",
           "event:FOMC Member Waller Speaks"
         ]
@@ -260,11 +261,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 769.63,
+        "price": 769.31,
         "range_today": 21.11,
         "range_vs_adr": 0.917,
         "spike_flag": false,
-        "updated_at": "2026-10-07T19:04:40+09:00"
+        "updated_at": "2026-10-07T19:22:42+09:00"
       },
       "events": {
         "in_event_window": true,
