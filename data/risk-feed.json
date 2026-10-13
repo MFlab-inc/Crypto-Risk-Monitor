@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-13T21:12:53+09:00",
-    "generated_intraday": "2026-10-13T21:29:05+09:00",
-    "generated_calendar": "2026-10-13T21:29:05+09:00",
+    "generated_intraday": "2026-10-13T21:35:05+09:00",
+    "generated_calendar": "2026-10-13T21:35:05+09:00",
     "session_date": "2026-10-12",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 102.28,
-      "change": -0.3,
-      "change_pct": -0.3
+      "value": 102.25,
+      "change": -0.33,
+      "change_pct": -0.32
     },
     "us10y": {
       "value": 5.24,
@@ -82,9 +82,9 @@
       "change_pct": -0.08
     },
     "vix": {
-      "value": 15.39,
-      "change": 0.18,
-      "change_pct": 1.18
+      "value": 15.37,
+      "change": 0.16,
+      "change_pct": 1.05
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83398.02,
+        "price": 83328,
         "range_today": 3134.34,
         "range_vs_adr": 1.54,
         "spike_flag": true,
-        "updated_at": "2026-10-13T21:29:05+09:00"
+        "updated_at": "2026-10-13T21:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -157,6 +157,46 @@
             "window_start_jst": "2026-10-14T09:30:00+09:00",
             "window_end_jst": "2026-10-14T22:30:00+09:00",
             "gating": true
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
           }
         ]
       },
@@ -180,11 +220,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2502.17,
+        "price": 2501.75,
         "range_today": 129.43,
         "range_vs_adr": 1.561,
         "spike_flag": true,
-        "updated_at": "2026-10-13T21:29:05+09:00"
+        "updated_at": "2026-10-13T21:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -237,6 +277,46 @@
             "window_start_jst": "2026-10-14T09:30:00+09:00",
             "window_end_jst": "2026-10-14T22:30:00+09:00",
             "gating": true
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
           }
         ]
       },
@@ -260,11 +340,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 739.96,
+        "price": 740.23,
         "range_today": 25.6,
         "range_vs_adr": 1.163,
         "spike_flag": false,
-        "updated_at": "2026-10-13T21:29:05+09:00"
+        "updated_at": "2026-10-13T21:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -317,6 +397,46 @@
             "window_start_jst": "2026-10-14T09:30:00+09:00",
             "window_end_jst": "2026-10-14T22:30:00+09:00",
             "gating": true
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "PPI m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          },
+          {
+            "time_jst": "2026-10-15T21:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Retail Sales m/m",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
           }
         ]
       },
