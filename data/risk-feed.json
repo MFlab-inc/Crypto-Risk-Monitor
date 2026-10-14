@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-14T13:48:04+09:00",
-    "generated_intraday": "2026-10-14T14:00:06+09:00",
+    "generated_intraday": "2026-10-14T14:03:05+09:00",
     "generated_calendar": "2026-10-14T14:00:06+09:00",
     "session_date": "2026-10-13",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
@@ -68,12 +68,14 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": []
+    "errors": [
+      "intraday/calendar: Forex Factory 取得失敗: https://nfs.faireconomy.media/ff_calendar_thisweek.json: fetch failed / https://nfs.faireconomy.media/ff_calendar_nextweek.json: HTTP 404(前回ウィンドウ判定を保持)"
+    ]
   },
   "market": {
     "dxy": {
-      "value": 102.09,
-      "change": -0.09,
+      "value": 102.1,
+      "change": -0.08,
       "change_pct": -0.08
     },
     "us10y": {
@@ -100,11 +102,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83766.01,
+        "price": 83684.49,
         "range_today": 789,
         "range_vs_adr": 0.394,
         "spike_flag": false,
-        "updated_at": "2026-10-14T14:00:06+09:00"
+        "updated_at": "2026-10-14T14:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -280,11 +282,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2515.13,
+        "price": 2511.94,
         "range_today": 24.69,
         "range_vs_adr": 0.302,
         "spike_flag": false,
-        "updated_at": "2026-10-14T14:00:06+09:00"
+        "updated_at": "2026-10-14T14:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -460,11 +462,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 745.55,
+        "price": 744.8,
         "range_today": 5.47,
         "range_vs_adr": 0.258,
         "spike_flag": false,
-        "updated_at": "2026-10-14T14:00:06+09:00"
+        "updated_at": "2026-10-14T14:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
