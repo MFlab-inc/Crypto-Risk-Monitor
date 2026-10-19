@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-19T19:19:32+09:00",
-    "generated_intraday": "2026-10-19T23:02:45+09:00",
-    "generated_calendar": "2026-10-19T23:02:45+09:00",
+    "generated_intraday": "2026-10-19T23:04:45+09:00",
+    "generated_calendar": "2026-10-19T23:04:45+09:00",
     "session_date": "2026-10-18",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 101.87,
+      "value": 101.86,
       "change": 0.03,
-      "change_pct": 0.03
+      "change_pct": 0.02
     },
     "us10y": {
-      "value": 5.112,
-      "change": 0.014,
-      "change_pct": 0.27
+      "value": 5.108,
+      "change": 0.01,
+      "change_pct": 0.2
     },
     "vix": {
-      "value": 17.99,
-      "change": -2,
-      "change_pct": -10.01
+      "value": 18,
+      "change": -1.99,
+      "change_pct": -9.95
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 81952.8,
-        "range_today": 1207.72,
-        "range_vs_adr": 0.575,
+        "price": 81793.13,
+        "range_today": 1374.24,
+        "range_vs_adr": 0.654,
         "spike_flag": false,
-        "updated_at": "2026-10-19T23:02:45+09:00"
+        "updated_at": "2026-10-19T23:04:45+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2393.72,
-        "range_today": 54.15,
-        "range_vs_adr": 0.588,
+        "price": 2386.51,
+        "range_today": 59.78,
+        "range_vs_adr": 0.649,
         "spike_flag": false,
-        "updated_at": "2026-10-19T23:02:45+09:00"
+        "updated_at": "2026-10-19T23:04:45+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 726.32,
+        "price": 725,
         "range_today": 7.9,
         "range_vs_adr": 0.373,
         "spike_flag": false,
-        "updated_at": "2026-10-19T23:02:45+09:00"
+        "updated_at": "2026-10-19T23:04:45+09:00"
       },
       "events": {
         "in_event_window": false,
