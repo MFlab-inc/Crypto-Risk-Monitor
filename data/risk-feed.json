@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-21T18:41:07+09:00",
-    "generated_intraday": "2026-10-21T19:00:03+09:00",
-    "generated_calendar": "2026-10-21T19:00:03+09:00",
+    "generated_intraday": "2026-10-21T19:03:05+09:00",
+    "generated_calendar": "2026-10-21T19:03:05+09:00",
     "session_date": "2026-10-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 101.75,
-      "change": 0.02,
-      "change_pct": 0.02
+      "value": 101.76,
+      "change": 0.03,
+      "change_pct": 0.03
     },
     "us10y": {
       "value": 5.117,
@@ -82,9 +82,9 @@
       "change_pct": -0.37
     },
     "vix": {
-      "value": 17.38,
-      "change": 0.07,
-      "change_pct": 0.4
+      "value": 17.39,
+      "change": 0.08,
+      "change_pct": 0.46
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83436.66,
+        "price": 83439.47,
         "range_today": 1078.59,
         "range_vs_adr": 0.524,
         "spike_flag": false,
-        "updated_at": "2026-10-21T19:00:03+09:00"
+        "updated_at": "2026-10-21T19:03:05+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2456.18,
+        "price": 2455.02,
         "range_today": 29.9,
         "range_vs_adr": 0.327,
         "spike_flag": false,
-        "updated_at": "2026-10-21T19:00:03+09:00"
+        "updated_at": "2026-10-21T19:03:05+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 748.16,
+        "price": 747.61,
         "range_today": 10.1,
         "range_vs_adr": 0.491,
         "spike_flag": false,
-        "updated_at": "2026-10-21T19:00:03+09:00"
+        "updated_at": "2026-10-21T19:03:05+09:00"
       },
       "events": {
         "in_event_window": false,
