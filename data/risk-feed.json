@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-21T18:41:07+09:00",
-    "generated_intraday": "2026-10-22T04:58:06+09:00",
-    "generated_calendar": "2026-10-22T04:58:06+09:00",
+    "generated_intraday": "2026-10-22T05:00:03+09:00",
+    "generated_calendar": "2026-10-22T05:00:03+09:00",
     "session_date": "2026-10-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,7 +74,7 @@
     "dxy": {
       "value": 101.69,
       "change": -0.04,
-      "change_pct": -0.04
+      "change_pct": -0.03
     },
     "us10y": {
       "value": 5.146,
@@ -82,9 +82,9 @@
       "change_pct": 0.57
     },
     "vix": {
-      "value": 16.76,
-      "change": -0.55,
-      "change_pct": -3.18
+      "value": 16.74,
+      "change": -0.57,
+      "change_pct": -3.29
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 84523.37,
+        "price": 84542.16,
         "range_today": 2262.68,
         "range_vs_adr": 1.099,
         "spike_flag": false,
-        "updated_at": "2026-10-22T04:58:06+09:00"
+        "updated_at": "2026-10-22T05:00:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2495.27,
+        "price": 2497.27,
         "range_today": 89.75,
         "range_vs_adr": 0.981,
         "spike_flag": false,
-        "updated_at": "2026-10-22T04:58:06+09:00"
+        "updated_at": "2026-10-22T05:00:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 749.34,
+        "price": 749.45,
         "range_today": 11.97,
         "range_vs_adr": 0.582,
         "spike_flag": false,
-        "updated_at": "2026-10-22T04:58:06+09:00"
+        "updated_at": "2026-10-22T05:00:03+09:00"
       },
       "events": {
         "in_event_window": false,
