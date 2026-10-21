@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-21T13:48:11+09:00",
-    "generated_intraday": "2026-10-21T18:05:03+09:00",
-    "generated_calendar": "2026-10-21T18:05:03+09:00",
+    "generated_intraday": "2026-10-21T18:23:03+09:00",
+    "generated_calendar": "2026-10-21T18:23:03+09:00",
     "session_date": "2026-10-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 101.77,
-      "change": 0.04,
-      "change_pct": 0.04
+      "value": 101.8,
+      "change": 0.07,
+      "change_pct": 0.07
     },
     "us10y": {
       "value": 5.117,
@@ -82,9 +82,9 @@
       "change_pct": -0.37
     },
     "vix": {
-      "value": 17.35,
-      "change": 0.04,
-      "change_pct": 0.23
+      "value": 17.44,
+      "change": 0.13,
+      "change_pct": 0.75
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 83280.25,
+        "price": 83505.85,
         "range_today": 1078.59,
         "range_vs_adr": 0.524,
         "spike_flag": false,
-        "updated_at": "2026-10-21T18:05:03+09:00"
+        "updated_at": "2026-10-21T18:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2455.07,
-        "range_today": 29.65,
-        "range_vs_adr": 0.324,
+        "price": 2463.01,
+        "range_today": 29.9,
+        "range_vs_adr": 0.327,
         "spike_flag": false,
-        "updated_at": "2026-10-21T18:05:03+09:00"
+        "updated_at": "2026-10-21T18:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 746.36,
-        "range_today": 8.49,
-        "range_vs_adr": 0.413,
+        "price": 748.65,
+        "range_today": 9.23,
+        "range_vs_adr": 0.449,
         "spike_flag": false,
-        "updated_at": "2026-10-21T18:05:03+09:00"
+        "updated_at": "2026-10-21T18:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
