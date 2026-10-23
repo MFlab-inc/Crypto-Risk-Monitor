@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-22T18:40:04+09:00",
-    "generated_intraday": "2026-10-23T09:00:03+09:00",
-    "generated_calendar": "2026-10-23T09:00:03+09:00",
+    "generated_intraday": "2026-10-23T09:03:06+09:00",
+    "generated_calendar": "2026-10-23T09:03:06+09:00",
     "session_date": "2026-10-21",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,8 +72,8 @@
   },
   "market": {
     "dxy": {
-      "value": 101.58,
-      "change": -0.2,
+      "value": 101.57,
+      "change": -0.21,
       "change_pct": -0.2
     },
     "us10y": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 81415.29,
-        "range_today": 3437.67,
-        "range_vs_adr": 1.663,
-        "spike_flag": true,
-        "updated_at": "2026-10-23T09:00:03+09:00"
+        "price": 81355.12,
+        "range_today": 86.08,
+        "range_vs_adr": 0.042,
+        "spike_flag": false,
+        "updated_at": "2026-10-23T09:03:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -112,11 +112,9 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": true,
-        "halt_all_new": true,
-        "reasons": [
-          "spike:range_vs_adr"
-        ]
+        "no_new_grid": false,
+        "halt_all_new": false,
+        "reasons": []
       }
     },
     "ETHUSD": {
@@ -131,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2389.36,
-        "range_today": 122.17,
-        "range_vs_adr": 1.306,
+        "price": 2387.9,
+        "range_today": 2.63,
+        "range_vs_adr": 0.028,
         "spike_flag": false,
-        "updated_at": "2026-10-23T09:00:03+09:00"
+        "updated_at": "2026-10-23T09:03:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -160,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 731.28,
-        "range_today": 24.13,
-        "range_vs_adr": 1.172,
+        "price": 731.16,
+        "range_today": 0.41,
+        "range_vs_adr": 0.02,
         "spike_flag": false,
-        "updated_at": "2026-10-23T09:00:03+09:00"
+        "updated_at": "2026-10-23T09:03:06+09:00"
       },
       "events": {
         "in_event_window": false,
