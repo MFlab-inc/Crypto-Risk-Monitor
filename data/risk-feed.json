@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-26T19:33:20+09:00",
-    "generated_intraday": "2026-10-27T02:58:10+09:00",
-    "generated_calendar": "2026-10-27T02:58:10+09:00",
+    "generated_intraday": "2026-10-27T03:00:05+09:00",
+    "generated_calendar": "2026-10-27T03:00:05+09:00",
     "session_date": "2026-10-25",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": -0.12
     },
     "vix": {
-      "value": 18.41,
-      "change": -1.04,
-      "change_pct": -5.35
+      "value": 18.46,
+      "change": -0.99,
+      "change_pct": -5.09
     }
   },
   "pairs": {
@@ -100,16 +100,41 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 80330,
+        "price": 80356.01,
         "range_today": 1476.03,
         "range_vs_adr": 0.711,
         "spike_flag": false,
-        "updated_at": "2026-10-27T02:58:10+09:00"
+        "updated_at": "2026-10-27T03:00:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -129,16 +154,41 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2327.27,
+        "price": 2326.6,
         "range_today": 51.63,
         "range_vs_adr": 0.525,
         "spike_flag": false,
-        "updated_at": "2026-10-27T02:58:10+09:00"
+        "updated_at": "2026-10-27T03:00:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -158,16 +208,41 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 745.28,
+        "price": 745.12,
         "range_today": 15.02,
         "range_vs_adr": 0.751,
         "spike_flag": false,
-        "updated_at": "2026-10-27T02:58:10+09:00"
+        "updated_at": "2026-10-27T03:00:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Federal Funds Rate",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          },
+          {
+            "time_jst": "2026-10-29T03:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "FOMC Statement",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-10-28T03:00:00+09:00",
+            "window_end_jst": "2026-10-29T05:00:00+09:00",
+            "gating": true
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
