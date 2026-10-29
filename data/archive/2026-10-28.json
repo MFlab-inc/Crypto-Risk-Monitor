@@ -1,10 +1,10 @@
 {
   "session_date": "2026-10-28",
-  "generated_at": "2026-10-29T13:48:10+09:00",
+  "generated_at": "2026-10-29T20:07:44+09:00",
   "market": {
     "dxy": {
       "value": 102.17,
-      "change": -0.02,
+      "change": -0.03,
       "change_pct": -0.02
     },
     "us10y": {
@@ -13,9 +13,9 @@
       "change_pct": 1.04
     },
     "vix": {
-      "value": 16.91,
-      "change": -0.61,
-      "change_pct": -3.48
+      "value": 16.99,
+      "change": 0.08,
+      "change_pct": 0.47
     }
   },
   "pairs": {
