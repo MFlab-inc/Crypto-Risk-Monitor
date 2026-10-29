@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-29T20:07:44+09:00",
-    "generated_intraday": "2026-10-29T23:29:05+09:00",
-    "generated_calendar": "2026-10-29T23:29:05+09:00",
+    "generated_intraday": "2026-10-29T23:35:05+09:00",
+    "generated_calendar": "2026-10-29T23:35:05+09:00",
     "session_date": "2026-10-28",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 102.19,
-      "change": 0,
-      "change_pct": 0
+      "value": 102.11,
+      "change": -0.08,
+      "change_pct": -0.08
     },
     "us10y": {
       "value": 4.989,
@@ -82,9 +82,9 @@
       "change_pct": -1.11
     },
     "vix": {
-      "value": 16.92,
-      "change": 0.01,
-      "change_pct": 0.06
+      "value": 16.81,
+      "change": -0.1,
+      "change_pct": -0.59
     }
   },
   "pairs": {
@@ -100,37 +100,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 80330.99,
+        "price": 80821.67,
         "range_today": 1670.01,
         "range_vs_adr": 0.863,
         "spike_flag": false,
-        "updated_at": "2026-10-29T23:29:05+09:00"
+        "updated_at": "2026-10-29T23:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Advance GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -150,37 +129,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2324.96,
+        "price": 2341.2,
         "range_today": 68.04,
         "range_vs_adr": 0.768,
         "spike_flag": false,
-        "updated_at": "2026-10-29T23:29:05+09:00"
+        "updated_at": "2026-10-29T23:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Advance GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -200,37 +158,16 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 742.62,
+        "price": 746,
         "range_today": 22.7,
         "range_vs_adr": 1.244,
         "spike_flag": false,
-        "updated_at": "2026-10-29T23:29:05+09:00"
+        "updated_at": "2026-10-29T23:35:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Advance GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-10-29T21:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
