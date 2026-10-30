@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-10-29T20:07:44+09:00",
-    "generated_intraday": "2026-10-30T11:05:05+09:00",
-    "generated_calendar": "2026-10-30T11:05:05+09:00",
+    "generated_intraday": "2026-10-30T11:23:03+09:00",
+    "generated_calendar": "2026-10-30T11:23:03+09:00",
     "session_date": "2026-10-28",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76686.31,
-        "range_today": 1629.56,
-        "range_vs_adr": 0.842,
+        "price": 77120,
+        "range_today": 1773.98,
+        "range_vs_adr": 0.917,
         "spike_flag": false,
-        "updated_at": "2026-10-30T11:05:05+09:00"
+        "updated_at": "2026-10-30T11:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2189.95,
+        "price": 2210.36,
         "range_today": 83.72,
         "range_vs_adr": 0.945,
         "spike_flag": false,
-        "updated_at": "2026-10-30T11:05:05+09:00"
+        "updated_at": "2026-10-30T11:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 702.48,
-        "range_today": 22.18,
-        "range_vs_adr": 1.215,
-        "spike_flag": false,
-        "updated_at": "2026-10-30T11:05:05+09:00"
+        "price": 709.18,
+        "range_today": 29.33,
+        "range_vs_adr": 1.607,
+        "spike_flag": true,
+        "updated_at": "2026-10-30T11:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -170,9 +170,11 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": false,
-        "halt_all_new": false,
-        "reasons": []
+        "no_new_grid": true,
+        "halt_all_new": true,
+        "reasons": [
+          "spike:range_vs_adr"
+        ]
       }
     }
   }
