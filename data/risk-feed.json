@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-01T20:31:03+09:00",
-    "generated_intraday": "2026-11-02T00:05:05+09:00",
-    "generated_calendar": "2026-11-02T00:05:05+09:00",
+    "generated_intraday": "2026-11-02T00:23:05+09:00",
+    "generated_calendar": "2026-11-02T00:23:05+09:00",
     "session_date": "2026-10-31",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,16 +100,27 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 78027.29,
+        "price": 78072,
         "range_today": 767.8,
         "range_vs_adr": 0.366,
         "spike_flag": false,
-        "updated_at": "2026-11-02T00:05:05+09:00"
+        "updated_at": "2026-11-02T00:23:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-11-04T00:16:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Congressional Elections",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -129,16 +140,27 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2271.37,
+        "price": 2271.51,
         "range_today": 23.4,
         "range_vs_adr": 0.247,
         "spike_flag": false,
-        "updated_at": "2026-11-02T00:05:05+09:00"
+        "updated_at": "2026-11-02T00:23:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-11-04T00:16:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Congressional Elections",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
@@ -158,16 +180,27 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 717.12,
-        "range_today": 15.32,
-        "range_vs_adr": 0.667,
+        "price": 715.83,
+        "range_today": 15.47,
+        "range_vs_adr": 0.673,
         "spike_flag": false,
-        "updated_at": "2026-11-02T00:05:05+09:00"
+        "updated_at": "2026-11-02T00:23:05+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": []
+        "next_48h": [
+          {
+            "time_jst": "2026-11-04T00:16:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Congressional Elections",
+            "types": [],
+            "window_start_jst": null,
+            "window_end_jst": null,
+            "gating": false
+          }
+        ]
       },
       "flags": {
         "no_new_grid": false,
