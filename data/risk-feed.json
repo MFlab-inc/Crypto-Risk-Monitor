@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-02T21:53:21+09:00",
-    "generated_intraday": "2026-11-03T00:29:16+09:00",
-    "generated_calendar": "2026-11-03T00:29:16+09:00",
+    "generated_intraday": "2026-11-03T00:35:06+09:00",
+    "generated_calendar": "2026-11-03T00:35:06+09:00",
     "session_date": "2026-11-01",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,17 +74,17 @@
     "dxy": {
       "value": 101.63,
       "change": -0.25,
-      "change_pct": -0.25
+      "change_pct": -0.24
     },
     "us10y": {
-      "value": 4.892,
-      "change": -0.037,
-      "change_pct": -0.75
+      "value": 4.896,
+      "change": -0.033,
+      "change_pct": -0.67
     },
     "vix": {
-      "value": 18.32,
-      "change": -1.1,
-      "change_pct": -5.66
+      "value": 18.14,
+      "change": -1.28,
+      "change_pct": -6.59
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 77972,
+        "price": 77840.01,
         "range_today": 1275.29,
         "range_vs_adr": 0.633,
         "spike_flag": false,
-        "updated_at": "2026-11-03T00:29:16+09:00"
+        "updated_at": "2026-11-03T00:35:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -140,11 +140,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2292.46,
+        "price": 2288.86,
         "range_today": 49.37,
         "range_vs_adr": 0.551,
         "spike_flag": false,
-        "updated_at": "2026-11-03T00:29:16+09:00"
+        "updated_at": "2026-11-03T00:35:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -180,11 +180,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 705.41,
+        "price": 704.49,
         "range_today": 12.87,
         "range_vs_adr": 0.573,
         "spike_flag": false,
-        "updated_at": "2026-11-03T00:29:16+09:00"
+        "updated_at": "2026-11-03T00:35:06+09:00"
       },
       "events": {
         "in_event_window": false,
