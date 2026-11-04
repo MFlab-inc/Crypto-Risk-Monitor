@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-04T13:48:10+09:00",
-    "generated_intraday": "2026-11-04T13:35:03+09:00",
-    "generated_calendar": "2026-11-04T13:48:10+09:00",
+    "generated_intraday": "2026-11-04T13:53:03+09:00",
+    "generated_calendar": "2026-11-04T13:53:03+09:00",
     "session_date": "2026-11-03",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 101.27,
-      "change": -0.6,
-      "change_pct": -0.59
+      "value": 101.32,
+      "change": -0.55,
+      "change_pct": -0.54
     },
     "us10y": {
       "value": 4.952,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 76705.85,
+        "price": 77240.68,
         "range_today": 1807.63,
-        "range_vs_adr": 0.92,
+        "range_vs_adr": 0.945,
         "spike_flag": false,
-        "updated_at": "2026-11-04T13:35:03+09:00"
+        "updated_at": "2026-11-04T13:53:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -129,11 +129,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 2258.3,
+        "price": 2273.34,
         "range_today": 54.71,
-        "range_vs_adr": 0.628,
+        "range_vs_adr": 0.65,
         "spike_flag": false,
-        "updated_at": "2026-11-04T13:35:03+09:00"
+        "updated_at": "2026-11-04T13:53:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -158,11 +158,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 688.14,
+        "price": 692.87,
         "range_today": 18.59,
-        "range_vs_adr": 0.834,
+        "range_vs_adr": 0.852,
         "spike_flag": false,
-        "updated_at": "2026-11-04T13:35:03+09:00"
+        "updated_at": "2026-11-04T13:53:03+09:00"
       },
       "events": {
         "in_event_window": false,
