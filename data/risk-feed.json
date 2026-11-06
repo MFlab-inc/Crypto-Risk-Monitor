@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-06T21:31:00+09:00",
-    "generated_intraday": "2026-11-07T00:29:04+09:00",
-    "generated_calendar": "2026-11-07T00:29:04+09:00",
+    "generated_intraday": "2026-11-07T00:35:04+09:00",
+    "generated_calendar": "2026-11-07T00:35:04+09:00",
     "session_date": "2026-11-05",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 102.15,
-      "change": 0.6,
-      "change_pct": 0.59
+      "value": 102.11,
+      "change": 0.56,
+      "change_pct": 0.55
     },
     "us10y": {
-      "value": 4.87,
-      "change": 0.033,
-      "change_pct": 0.68
+      "value": 4.872,
+      "change": 0.035,
+      "change_pct": 0.72
     },
     "vix": {
-      "value": 23.92,
-      "change": -4.26,
-      "change_pct": -15.12
+      "value": 23.78,
+      "change": -4.4,
+      "change_pct": -15.61
     }
   },
   "pairs": {
@@ -100,53 +100,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 75613.82,
+        "price": 75481.62,
         "range_today": 1528.24,
         "range_vs_adr": 0.687,
         "spike_flag": false,
-        "updated_at": "2026-11-07T00:29:04+09:00"
+        "updated_at": "2026-11-07T00:35:04+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -166,53 +129,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 2221.78,
+        "price": 2220.06,
         "range_today": 41,
         "range_vs_adr": 0.434,
         "spike_flag": false,
-        "updated_at": "2026-11-07T00:29:04+09:00"
+        "updated_at": "2026-11-07T00:35:04+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -232,53 +158,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 696.02,
+        "price": 695.14,
         "range_today": 13,
         "range_vs_adr": 0.549,
         "spike_flag": false,
-        "updated_at": "2026-11-07T00:29:04+09:00"
+        "updated_at": "2026-11-07T00:35:04+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Average Hourly Earnings m/m",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Non-Farm Employment Change",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          },
-          {
-            "time_jst": "2026-11-06T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Unemployment Rate",
-            "types": [
-              "us_jobs"
-            ],
-            "window_start_jst": "2026-11-06T10:30:00+09:00",
-            "window_end_jst": "2026-11-06T23:30:00+09:00",
-            "gating": true
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
