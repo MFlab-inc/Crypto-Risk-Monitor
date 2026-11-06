@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-11-05T21:46:34+09:00",
+    "generated_daily": "2026-11-06T13:48:10+09:00",
     "generated_intraday": "2026-11-06T13:35:05+09:00",
-    "generated_calendar": "2026-11-06T13:35:05+09:00",
-    "session_date": "2026-11-04",
+    "generated_calendar": "2026-11-06T13:48:10+09:00",
+    "session_date": "2026-11-05",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
       "_note": "すべて仮置き(2026-08-02時点)。運用実測(data/archive/の日次スナップショット蓄積)で確定する2段階方式はEA-Risk-Monitorと同じ。暗号資産は24/7取引のため暦日ベース: パーセンタイル365暦日・年率化sqrt(365)。",
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 101.8,
-      "change": 0.25,
-      "change_pct": 0.25
+      "value": 101.76,
+      "change": 0.21,
+      "change_pct": 0.21
     },
     "us10y": {
       "value": 4.837,
@@ -90,15 +90,15 @@
   "pairs": {
     "BTCUSD": {
       "data_ok": true,
-      "session_date": "2026-11-04",
-      "close": 80504.01,
-      "atr14": 2200.58,
-      "atr_pct": 2.734,
-      "adr20": 2044.96,
-      "rv20": 32.8,
-      "atr_pct_percentile_250": 28.5,
+      "session_date": "2026-11-05",
+      "close": 76088.01,
+      "atr14": 2451.23,
+      "atr_pct": 3.222,
+      "adr20": 2223.86,
+      "rv20": 40.41,
+      "atr_pct_percentile_250": 52.3,
       "percentile_window": 365,
-      "regime": "normal",
+      "regime": "caution",
       "intraday": {
         "price": 75740,
         "range_today": 790.3,
@@ -194,15 +194,15 @@
     },
     "ETHUSD": {
       "data_ok": true,
-      "session_date": "2026-11-04",
-      "close": 2424.61,
-      "atr14": 91.77,
-      "atr_pct": 3.785,
-      "adr20": 87.86,
-      "rv20": 40.83,
-      "atr_pct_percentile_250": 31.5,
+      "session_date": "2026-11-05",
+      "close": 2238.01,
+      "atr14": 101.71,
+      "atr_pct": 4.544,
+      "adr20": 94.38,
+      "rv20": 53.17,
+      "atr_pct_percentile_250": 58.1,
       "percentile_window": 365,
-      "regime": "normal",
+      "regime": "caution",
       "intraday": {
         "price": 2231.18,
         "range_today": 22.39,
@@ -298,13 +298,13 @@
     },
     "BNBUSD": {
       "data_ok": true,
-      "session_date": "2026-11-04",
-      "close": 719.99,
-      "atr14": 24.16,
-      "atr_pct": 3.356,
-      "adr20": 22.63,
-      "rv20": 44.18,
-      "atr_pct_percentile_250": 53.4,
+      "session_date": "2026-11-05",
+      "close": 689.72,
+      "atr14": 25.15,
+      "atr_pct": 3.647,
+      "adr20": 23.66,
+      "rv20": 47.59,
+      "atr_pct_percentile_250": 63,
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
