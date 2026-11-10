@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-10T13:48:10+09:00",
-    "generated_intraday": "2026-11-10T19:00:04+09:00",
-    "generated_calendar": "2026-11-10T19:00:04+09:00",
+    "generated_intraday": "2026-11-10T19:03:05+09:00",
+    "generated_calendar": "2026-11-10T19:03:05+09:00",
     "session_date": "2026-11-09",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,7 +74,7 @@
     "dxy": {
       "value": 101.71,
       "change": 0.06,
-      "change_pct": 0.05
+      "change_pct": 0.06
     },
     "us10y": {
       "value": 4.864,
@@ -82,9 +82,9 @@
       "change_pct": 0.1
     },
     "vix": {
-      "value": 19.88,
-      "change": -0.04,
-      "change_pct": -0.2
+      "value": 19.81,
+      "change": -0.11,
+      "change_pct": -0.55
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 74530.27,
+        "price": 74556,
         "range_today": 1264.64,
         "range_vs_adr": 0.562,
         "spike_flag": false,
-        "updated_at": "2026-11-10T19:00:04+09:00"
+        "updated_at": "2026-11-10T19:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -204,11 +204,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 2105.45,
+        "price": 2106.22,
         "range_today": 46.76,
         "range_vs_adr": 0.5,
         "spike_flag": false,
-        "updated_at": "2026-11-10T19:00:04+09:00"
+        "updated_at": "2026-11-10T19:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -308,11 +308,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 690.83,
+        "price": 691.32,
         "range_today": 5.14,
         "range_vs_adr": 0.218,
         "spike_flag": false,
-        "updated_at": "2026-11-10T19:00:04+09:00"
+        "updated_at": "2026-11-10T19:03:05+09:00"
       },
       "events": {
         "in_event_window": true,
