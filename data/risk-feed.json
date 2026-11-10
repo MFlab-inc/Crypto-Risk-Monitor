@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-09T22:24:36+09:00",
-    "generated_intraday": "2026-11-10T10:29:04+09:00",
-    "generated_calendar": "2026-11-10T10:29:04+09:00",
+    "generated_intraday": "2026-11-10T10:35:04+09:00",
+    "generated_calendar": "2026-11-10T10:35:04+09:00",
     "session_date": "2026-11-08",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,8 +72,8 @@
   },
   "market": {
     "dxy": {
-      "value": 101.67,
-      "change": -0.63,
+      "value": 101.66,
+      "change": -0.64,
       "change_pct": -0.62
     },
     "us10y": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 75160.01,
+        "price": 75016.01,
         "range_today": 472.16,
         "range_vs_adr": 0.208,
         "spike_flag": false,
-        "updated_at": "2026-11-10T10:29:04+09:00"
+        "updated_at": "2026-11-10T10:35:04+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -119,6 +119,28 @@
             ],
             "window_start_jst": "2026-11-09T18:00:00+09:00",
             "window_end_jst": "2026-11-10T20:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -164,7 +186,9 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:FOMC Member Waller Speaks"
+          "event:FOMC Member Waller Speaks",
+          "event:Core CPI m/m",
+          "event:CPI m/m"
         ]
       }
     },
@@ -180,11 +204,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 2129.15,
+        "price": 2125.11,
         "range_today": 13.72,
         "range_vs_adr": 0.144,
         "spike_flag": false,
-        "updated_at": "2026-11-10T10:29:04+09:00"
+        "updated_at": "2026-11-10T10:35:04+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -199,6 +223,28 @@
             ],
             "window_start_jst": "2026-11-09T18:00:00+09:00",
             "window_end_jst": "2026-11-10T20:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -244,7 +290,9 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:FOMC Member Waller Speaks"
+          "event:FOMC Member Waller Speaks",
+          "event:Core CPI m/m",
+          "event:CPI m/m"
         ]
       }
     },
@@ -260,11 +308,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 691.46,
+        "price": 690.26,
         "range_today": 3.52,
         "range_vs_adr": 0.15,
         "spike_flag": false,
-        "updated_at": "2026-11-10T10:29:04+09:00"
+        "updated_at": "2026-11-10T10:35:04+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -279,6 +327,28 @@
             ],
             "window_start_jst": "2026-11-09T18:00:00+09:00",
             "window_end_jst": "2026-11-10T20:00:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Core CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
+          },
+          {
+            "time_jst": "2026-11-10T22:30:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "CPI m/m",
+            "types": [
+              "us_cpi"
+            ],
+            "window_start_jst": "2026-11-10T10:30:00+09:00",
+            "window_end_jst": "2026-11-10T23:30:00+09:00"
           }
         ],
         "next_48h": [
@@ -324,7 +394,9 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "event:FOMC Member Waller Speaks"
+          "event:FOMC Member Waller Speaks",
+          "event:Core CPI m/m",
+          "event:CPI m/m"
         ]
       }
     }
