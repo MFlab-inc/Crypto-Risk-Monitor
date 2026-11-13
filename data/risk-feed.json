@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-12T22:17:35+09:00",
-    "generated_intraday": "2026-11-13T10:35:04+09:00",
+    "generated_intraday": "2026-11-13T10:53:04+09:00",
     "generated_calendar": "2026-11-13T10:35:04+09:00",
     "session_date": "2026-11-11",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
@@ -68,13 +68,15 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": []
+    "errors": [
+      "intraday/calendar: Forex Factory 取得失敗: https://nfs.faireconomy.media/ff_calendar_thisweek.json: HTTP 429 / https://nfs.faireconomy.media/ff_calendar_nextweek.json: HTTP 404(前回ウィンドウ判定を保持)"
+    ]
   },
   "market": {
     "dxy": {
-      "value": 103.15,
-      "change": 0.24,
-      "change_pct": 0.24
+      "value": 103.14,
+      "change": 0.23,
+      "change_pct": 0.22
     },
     "us10y": {
       "value": 5.103,
@@ -100,11 +102,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 71088.01,
+        "price": 70908.85,
         "range_today": 826.01,
         "range_vs_adr": 0.379,
         "spike_flag": false,
-        "updated_at": "2026-11-13T10:35:04+09:00"
+        "updated_at": "2026-11-13T10:53:04+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -150,11 +152,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 2014.15,
+        "price": 2011.66,
         "range_today": 20.36,
         "range_vs_adr": 0.219,
         "spike_flag": false,
-        "updated_at": "2026-11-13T10:35:04+09:00"
+        "updated_at": "2026-11-13T10:53:04+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -200,11 +202,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 655.27,
+        "price": 653.78,
         "range_today": 6.11,
         "range_vs_adr": 0.26,
         "spike_flag": false,
-        "updated_at": "2026-11-13T10:35:04+09:00"
+        "updated_at": "2026-11-13T10:53:04+09:00"
       },
       "events": {
         "in_event_window": false,
