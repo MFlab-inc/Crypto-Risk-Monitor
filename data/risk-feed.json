@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-13T21:39:38+09:00",
-    "generated_intraday": "2026-11-14T00:29:06+09:00",
-    "generated_calendar": "2026-11-14T00:29:06+09:00",
+    "generated_intraday": "2026-11-14T00:30:07+09:00",
+    "generated_calendar": "2026-11-14T00:30:07+09:00",
     "session_date": "2026-11-12",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 103.21,
-      "change": 0.04,
-      "change_pct": 0.04
+      "value": 103.2,
+      "change": 0.03,
+      "change_pct": 0.03
     },
     "us10y": {
-      "value": 5.137,
-      "change": 0.034,
-      "change_pct": 0.67
+      "value": 5.125,
+      "change": 0.022,
+      "change_pct": 0.43
     },
     "vix": {
-      "value": 20.48,
-      "change": 1.78,
-      "change_pct": 9.52
+      "value": 20.72,
+      "change": 2.02,
+      "change_pct": 10.8
     }
   },
   "pairs": {
@@ -100,37 +100,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 68560.02,
+        "price": 68680.7,
         "range_today": 3946.01,
         "range_vs_adr": 1.747,
         "spike_flag": true,
-        "updated_at": "2026-11-14T00:29:06+09:00"
+        "updated_at": "2026-11-14T00:30:07+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": true,
@@ -152,37 +131,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 1925.2,
+        "price": 1930.48,
         "range_today": 125.16,
         "range_vs_adr": 1.335,
         "spike_flag": false,
-        "updated_at": "2026-11-14T00:29:06+09:00"
+        "updated_at": "2026-11-14T00:30:07+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": false,
@@ -202,37 +160,16 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 632.32,
+        "price": 633.49,
         "range_today": 36.24,
         "range_vs_adr": 1.501,
         "spike_flag": true,
-        "updated_at": "2026-11-14T00:29:06+09:00"
+        "updated_at": "2026-11-14T00:30:07+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-13T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "PPI m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": true,
