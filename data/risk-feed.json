@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-12T22:17:35+09:00",
-    "generated_intraday": "2026-11-13T11:53:03+09:00",
-    "generated_calendar": "2026-11-13T11:53:03+09:00",
+    "generated_intraday": "2026-11-13T11:58:04+09:00",
+    "generated_calendar": "2026-11-13T11:58:04+09:00",
     "session_date": "2026-11-11",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 103.18,
-      "change": 0.01,
-      "change_pct": 0.01
+      "value": 103.17,
+      "change": 0,
+      "change_pct": 0
     },
     "us10y": {
       "value": 5.103,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 70160,
-        "range_today": 1355,
-        "range_vs_adr": 0.621,
+        "price": 70350,
+        "range_today": 1614.01,
+        "range_vs_adr": 0.74,
         "spike_flag": false,
-        "updated_at": "2026-11-13T11:53:03+09:00"
+        "updated_at": "2026-11-13T11:58:04+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -150,11 +150,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 1988.27,
-        "range_today": 35.91,
-        "range_vs_adr": 0.387,
+        "price": 1993.75,
+        "range_today": 46.17,
+        "range_vs_adr": 0.497,
         "spike_flag": false,
-        "updated_at": "2026-11-13T11:53:03+09:00"
+        "updated_at": "2026-11-13T11:58:04+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -200,11 +200,11 @@
       "percentile_window": 365,
       "regime": "normal",
       "intraday": {
-        "price": 645.86,
-        "range_today": 13.21,
-        "range_vs_adr": 0.562,
+        "price": 648.08,
+        "range_today": 14.78,
+        "range_vs_adr": 0.628,
         "spike_flag": false,
-        "updated_at": "2026-11-13T11:53:03+09:00"
+        "updated_at": "2026-11-13T11:58:04+09:00"
       },
       "events": {
         "in_event_window": false,
