@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-15T21:18:06+09:00",
-    "generated_intraday": "2026-11-16T01:58:03+09:00",
-    "generated_calendar": "2026-11-16T01:58:03+09:00",
+    "generated_intraday": "2026-11-16T02:00:03+09:00",
+    "generated_calendar": "2026-11-16T02:00:03+09:00",
     "session_date": "2026-11-14",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -100,15 +100,27 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 64703.98,
+        "price": 64716.61,
         "range_today": 4126.01,
         "range_vs_adr": 1.616,
         "spike_flag": true,
-        "updated_at": "2026-11-16T01:58:03+09:00"
+        "updated_at": "2026-11-16T02:00:03+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-11-17T02:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-11-16T02:00:00+09:00",
+            "window_end_jst": "2026-11-17T04:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-11-17T02:00:00+09:00",
@@ -148,7 +160,8 @@
         "no_new_grid": true,
         "halt_all_new": true,
         "reasons": [
-          "spike:range_vs_adr"
+          "spike:range_vs_adr",
+          "event:Fed Chairman Warsh Speaks"
         ]
       }
     },
@@ -164,15 +177,27 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1814.2,
+        "price": 1814.7,
         "range_today": 134.1,
         "range_vs_adr": 1.317,
         "spike_flag": false,
-        "updated_at": "2026-11-16T01:58:03+09:00"
+        "updated_at": "2026-11-16T02:00:03+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-11-17T02:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-11-16T02:00:00+09:00",
+            "window_end_jst": "2026-11-17T04:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-11-17T02:00:00+09:00",
@@ -212,7 +237,8 @@
         "no_new_grid": true,
         "halt_all_new": false,
         "reasons": [
-          "regime:highvol"
+          "regime:highvol",
+          "event:Fed Chairman Warsh Speaks"
         ]
       }
     },
@@ -228,15 +254,27 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 591.63,
+        "price": 591.84,
         "range_today": 33.72,
         "range_vs_adr": 1.236,
         "spike_flag": false,
-        "updated_at": "2026-11-16T01:58:03+09:00"
+        "updated_at": "2026-11-16T02:00:03+09:00"
       },
       "events": {
-        "in_event_window": false,
-        "active": [],
+        "in_event_window": true,
+        "active": [
+          {
+            "time_jst": "2026-11-17T02:00:00+09:00",
+            "currency": "USD",
+            "impact": "High",
+            "title": "Fed Chairman Warsh Speaks",
+            "types": [
+              "fomc"
+            ],
+            "window_start_jst": "2026-11-16T02:00:00+09:00",
+            "window_end_jst": "2026-11-17T04:00:00+09:00"
+          }
+        ],
         "next_48h": [
           {
             "time_jst": "2026-11-17T02:00:00+09:00",
@@ -273,9 +311,11 @@
         ]
       },
       "flags": {
-        "no_new_grid": false,
+        "no_new_grid": true,
         "halt_all_new": false,
-        "reasons": []
+        "reasons": [
+          "event:Fed Chairman Warsh Speaks"
+        ]
       }
     }
   }
