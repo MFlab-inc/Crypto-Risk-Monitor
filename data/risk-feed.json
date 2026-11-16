@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-16T13:48:09+09:00",
-    "generated_intraday": "2026-11-16T13:35:06+09:00",
-    "generated_calendar": "2026-11-16T13:48:09+09:00",
+    "generated_intraday": "2026-11-16T13:53:10+09:00",
+    "generated_calendar": "2026-11-16T13:53:10+09:00",
     "session_date": "2026-11-15",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 103.46,
-      "change": 0.05,
-      "change_pct": 0.05
+      "value": 103.45,
+      "change": 0.04,
+      "change_pct": 0.04
     },
     "us10y": {
       "value": 5.154,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 64970.01,
+        "price": 64849.08,
         "range_today": 861.89,
-        "range_vs_adr": 0.337,
+        "range_vs_adr": 0.321,
         "spike_flag": false,
-        "updated_at": "2026-11-16T13:35:06+09:00"
+        "updated_at": "2026-11-16T13:53:10+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -177,11 +177,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1823.63,
+        "price": 1818.65,
         "range_today": 35.14,
-        "range_vs_adr": 0.345,
+        "range_vs_adr": 0.332,
         "spike_flag": false,
-        "updated_at": "2026-11-16T13:35:06+09:00"
+        "updated_at": "2026-11-16T13:53:10+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -254,11 +254,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 591.9,
-        "range_today": 7.73,
+        "price": 590.21,
+        "range_today": 8,
         "range_vs_adr": 0.283,
         "spike_flag": false,
-        "updated_at": "2026-11-16T13:35:06+09:00"
+        "updated_at": "2026-11-16T13:53:10+09:00"
       },
       "events": {
         "in_event_window": true,
