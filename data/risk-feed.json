@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-15T21:18:06+09:00",
-    "generated_intraday": "2026-11-16T09:05:04+09:00",
-    "generated_calendar": "2026-11-16T09:05:04+09:00",
+    "generated_intraday": "2026-11-16T09:23:04+09:00",
+    "generated_calendar": "2026-11-16T09:23:04+09:00",
     "session_date": "2026-11-14",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,9 +72,9 @@
   },
   "market": {
     "dxy": {
-      "value": 103.39,
-      "change": -0.02,
-      "change_pct": -0.02
+      "value": 103.38,
+      "change": -0.03,
+      "change_pct": -0.03
     },
     "us10y": {
       "value": 5.154,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 65299.91,
-        "range_today": 114.55,
-        "range_vs_adr": 0.045,
+        "price": 64992,
+        "range_today": 416.01,
+        "range_vs_adr": 0.163,
         "spike_flag": false,
-        "updated_at": "2026-11-16T09:05:04+09:00"
+        "updated_at": "2026-11-16T09:23:04+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -176,11 +176,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1835.31,
-        "range_today": 3.66,
-        "range_vs_adr": 0.036,
+        "price": 1824.54,
+        "range_today": 14.97,
+        "range_vs_adr": 0.147,
         "spike_flag": false,
-        "updated_at": "2026-11-16T09:05:04+09:00"
+        "updated_at": "2026-11-16T09:23:04+09:00"
       },
       "events": {
         "in_event_window": true,
@@ -253,11 +253,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 596.75,
-        "range_today": 0.52,
-        "range_vs_adr": 0.019,
+        "price": 594.85,
+        "range_today": 2.96,
+        "range_vs_adr": 0.108,
         "spike_flag": false,
-        "updated_at": "2026-11-16T09:05:04+09:00"
+        "updated_at": "2026-11-16T09:23:04+09:00"
       },
       "events": {
         "in_event_window": true,
