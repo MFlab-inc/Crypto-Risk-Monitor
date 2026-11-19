@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-11-19T13:48:11+09:00",
+    "generated_daily": "2026-11-19T22:57:04+09:00",
     "generated_intraday": "2026-11-19T22:53:10+09:00",
-    "generated_calendar": "2026-11-19T22:35:03+09:00",
+    "generated_calendar": "2026-11-19T22:57:04+09:00",
     "session_date": "2026-11-18",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -68,20 +68,18 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": [
-      "intraday/calendar: Forex Factory 取得失敗: https://nfs.faireconomy.media/ff_calendar_thisweek.json: HTTP 429 / https://nfs.faireconomy.media/ff_calendar_nextweek.json: HTTP 404(前回ウィンドウ判定を保持)"
-    ]
+    "errors": []
   },
   "market": {
     "dxy": {
-      "value": 103.68,
-      "change": -0.18,
-      "change_pct": -0.17
+      "value": 103.69,
+      "change": -0.17,
+      "change_pct": -0.16
     },
     "us10y": {
-      "value": 5.085,
-      "change": 0.019,
-      "change_pct": 0.38
+      "value": 5.078,
+      "change": 0.012,
+      "change_pct": 0.24
     },
     "vix": {
       "value": 22.65,
