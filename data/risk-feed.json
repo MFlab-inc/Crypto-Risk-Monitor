@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-20T22:38:25+09:00",
-    "generated_intraday": "2026-11-21T01:03:03+09:00",
-    "generated_calendar": "2026-11-21T01:03:03+09:00",
+    "generated_intraday": "2026-11-21T01:05:06+09:00",
+    "generated_calendar": "2026-11-21T01:05:06+09:00",
     "session_date": "2026-11-19",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 103.65,
-      "change": -0.25,
-      "change_pct": -0.24
+      "value": 103.68,
+      "change": -0.22,
+      "change_pct": -0.21
     },
     "us10y": {
-      "value": 4.942,
-      "change": -0.11,
-      "change_pct": -2.18
+      "value": 4.954,
+      "change": -0.098,
+      "change_pct": -1.94
     },
     "vix": {
-      "value": 30.66,
-      "change": 2.22,
-      "change_pct": 7.81
+      "value": 29.65,
+      "change": 1.21,
+      "change_pct": 4.25
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 59288.01,
-        "range_today": 3450.63,
-        "range_vs_adr": 1.291,
+        "price": 58882.35,
+        "range_today": 3866.04,
+        "range_vs_adr": 1.446,
         "spike_flag": false,
-        "updated_at": "2026-11-21T01:03:03+09:00"
+        "updated_at": "2026-11-21T01:05:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1648.38,
-        "range_today": 125.35,
-        "range_vs_adr": 1.196,
+        "price": 1631.43,
+        "range_today": 146.18,
+        "range_vs_adr": 1.395,
         "spike_flag": false,
-        "updated_at": "2026-11-21T01:03:03+09:00"
+        "updated_at": "2026-11-21T01:05:06+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -162,11 +162,11 @@
       "percentile_window": 365,
       "regime": "caution",
       "intraday": {
-        "price": 545.75,
-        "range_today": 37.66,
-        "range_vs_adr": 1.58,
+        "price": 543.82,
+        "range_today": 41.05,
+        "range_vs_adr": 1.722,
         "spike_flag": true,
-        "updated_at": "2026-11-21T01:03:03+09:00"
+        "updated_at": "2026-11-21T01:05:06+09:00"
       },
       "events": {
         "in_event_window": false,
