@@ -1,10 +1,10 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-11-20T22:38:25+09:00",
+    "generated_daily": "2026-11-21T13:48:08+09:00",
     "generated_intraday": "2026-11-21T13:35:03+09:00",
-    "generated_calendar": "2026-11-21T13:35:03+09:00",
-    "session_date": "2026-11-19",
+    "generated_calendar": "2026-11-21T13:48:08+09:00",
+    "session_date": "2026-11-20",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
       "_note": "すべて仮置き(2026-08-02時点)。運用実測(data/archive/の日次スナップショット蓄積)で確定する2段階方式はEA-Risk-Monitorと同じ。暗号資産は24/7取引のため暦日ベース: パーセンタイル365暦日・年率化sqrt(365)。",
@@ -90,13 +90,13 @@
   "pairs": {
     "BTCUSD": {
       "data_ok": true,
-      "session_date": "2026-11-19",
-      "close": 61986.73,
-      "atr14": 2642.34,
-      "atr_pct": 4.263,
-      "adr20": 2673.17,
-      "rv20": 48.52,
-      "atr_pct_percentile_250": 84.4,
+      "session_date": "2026-11-20",
+      "close": 58951.51,
+      "atr14": 2800.83,
+      "atr_pct": 4.751,
+      "adr20": 2882.13,
+      "rv20": 50.83,
+      "atr_pct_percentile_250": 89,
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
@@ -121,13 +121,13 @@
     },
     "ETHUSD": {
       "data_ok": true,
-      "session_date": "2026-11-19",
-      "close": 1757.32,
-      "atr14": 102.92,
-      "atr_pct": 5.856,
-      "adr20": 104.77,
-      "rv20": 68.14,
-      "atr_pct_percentile_250": 82.2,
+      "session_date": "2026-11-20",
+      "close": 1623.09,
+      "atr14": 109.07,
+      "atr_pct": 6.72,
+      "adr20": 112.64,
+      "rv20": 73.41,
+      "atr_pct_percentile_250": 91,
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
@@ -152,15 +152,15 @@
     },
     "BNBUSD": {
       "data_ok": true,
-      "session_date": "2026-11-19",
-      "close": 580.25,
-      "atr14": 24.84,
-      "atr_pct": 4.281,
-      "adr20": 23.84,
-      "rv20": 49.61,
-      "atr_pct_percentile_250": 77,
+      "session_date": "2026-11-20",
+      "close": 540.84,
+      "atr14": 26.83,
+      "atr_pct": 4.961,
+      "adr20": 25.87,
+      "rv20": 55.72,
+      "atr_pct_percentile_250": 86.6,
       "percentile_window": 365,
-      "regime": "caution",
+      "regime": "highvol",
       "intraday": {
         "price": 512.5,
         "range_today": 32.05,
@@ -174,9 +174,11 @@
         "next_48h": []
       },
       "flags": {
-        "no_new_grid": false,
+        "no_new_grid": true,
         "halt_all_new": false,
-        "reasons": []
+        "reasons": [
+          "regime:highvol"
+        ]
       }
     }
   }
