@@ -1,11 +1,11 @@
 {
   "session_date": "2026-11-20",
-  "generated_at": "2026-11-21T13:48:08+09:00",
+  "generated_at": "2026-11-21T22:03:37+09:00",
   "market": {
     "dxy": {
-      "value": 103.84,
-      "change": -0.06,
-      "change_pct": -0.06
+      "value": 103.81,
+      "change": -0.09,
+      "change_pct": -0.09
     },
     "us10y": {
       "value": 4.912,
