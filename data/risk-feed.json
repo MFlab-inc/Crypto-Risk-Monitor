@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-22T21:53:20+09:00",
-    "generated_intraday": "2026-11-23T06:05:02+09:00",
+    "generated_intraday": "2026-11-23T06:23:08+09:00",
     "generated_calendar": "2026-11-23T06:05:02+09:00",
     "session_date": "2026-11-21",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
@@ -68,7 +68,9 @@
       "feed_staleness_warn_minutes": 120
     },
     "note": "暗号資産3銘柄の市場データと市場判定のみを配信する。口座・運用情報は含まない。事実データであり売買助言ではない。日足はUTC暦日区切り。intraday値は実行間隔+遅延分の古さを持ち得る。",
-    "errors": []
+    "errors": [
+      "intraday/calendar: Forex Factory 取得失敗: https://nfs.faireconomy.media/ff_calendar_thisweek.json: HTTP 429 / https://nfs.faireconomy.media/ff_calendar_nextweek.json: HTTP 404(前回ウィンドウ判定を保持)"
+    ]
   },
   "market": {
     "dxy": {
@@ -100,11 +102,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 61037.01,
+        "price": 60938,
         "range_today": 2901.48,
         "range_vs_adr": 0.927,
         "spike_flag": false,
-        "updated_at": "2026-11-23T06:05:02+09:00"
+        "updated_at": "2026-11-23T06:23:08+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +133,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1724.41,
+        "price": 1723.78,
         "range_today": 84.17,
         "range_vs_adr": 0.701,
         "spike_flag": false,
-        "updated_at": "2026-11-23T06:05:02+09:00"
+        "updated_at": "2026-11-23T06:23:08+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -162,11 +164,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 558.38,
+        "price": 558.13,
         "range_today": 23.72,
         "range_vs_adr": 0.863,
         "spike_flag": false,
-        "updated_at": "2026-11-23T06:05:02+09:00"
+        "updated_at": "2026-11-23T06:23:08+09:00"
       },
       "events": {
         "in_event_window": false,
