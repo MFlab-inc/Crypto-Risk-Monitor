@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-26T00:00:36+09:00",
-    "generated_intraday": "2026-11-26T00:29:10+09:00",
-    "generated_calendar": "2026-11-26T00:29:10+09:00",
+    "generated_intraday": "2026-11-26T00:35:03+09:00",
+    "generated_calendar": "2026-11-26T00:35:03+09:00",
     "session_date": "2026-11-24",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -72,19 +72,19 @@
   },
   "market": {
     "dxy": {
-      "value": 104.03,
-      "change": 0.22,
-      "change_pct": 0.21
+      "value": 103.99,
+      "change": 0.18,
+      "change_pct": 0.18
     },
     "us10y": {
-      "value": 4.826,
-      "change": -0.078,
-      "change_pct": -1.59
+      "value": 4.822,
+      "change": -0.082,
+      "change_pct": -1.67
     },
     "vix": {
-      "value": 32.26,
-      "change": 5.9,
-      "change_pct": 22.38
+      "value": 33.59,
+      "change": 7.23,
+      "change_pct": 27.43
     }
   },
   "pairs": {
@@ -100,37 +100,16 @@
       "percentile_window": 365,
       "regime": "extreme",
       "intraday": {
-        "price": 57963.45,
+        "price": 58246.03,
         "range_today": 2535,
         "range_vs_adr": 0.807,
         "spike_flag": false,
-        "updated_at": "2026-11-26T00:29:10+09:00"
+        "updated_at": "2026-11-26T00:35:03+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": true,
@@ -152,37 +131,16 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1631.48,
+        "price": 1641.3,
         "range_today": 71.25,
         "range_vs_adr": 0.614,
         "spike_flag": false,
-        "updated_at": "2026-11-26T00:29:10+09:00"
+        "updated_at": "2026-11-26T00:35:03+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": true,
@@ -204,37 +162,16 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 532.98,
+        "price": 535.62,
         "range_today": 22.05,
         "range_vs_adr": 0.799,
         "spike_flag": false,
-        "updated_at": "2026-11-26T00:29:10+09:00"
+        "updated_at": "2026-11-26T00:35:03+09:00"
       },
       "events": {
         "in_event_window": false,
         "active": [],
-        "next_48h": [
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Core PCE Price Index m/m",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          },
-          {
-            "time_jst": "2026-11-25T22:30:00+09:00",
-            "currency": "USD",
-            "impact": "High",
-            "title": "Prelim GDP q/q",
-            "types": [],
-            "window_start_jst": null,
-            "window_end_jst": null,
-            "gating": false
-          }
-        ]
+        "next_48h": []
       },
       "flags": {
         "no_new_grid": true,
