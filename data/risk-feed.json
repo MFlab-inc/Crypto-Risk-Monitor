@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-26T00:00:36+09:00",
-    "generated_intraday": "2026-11-26T03:05:03+09:00",
-    "generated_calendar": "2026-11-26T03:05:03+09:00",
+    "generated_intraday": "2026-11-26T03:23:03+09:00",
+    "generated_calendar": "2026-11-26T03:23:03+09:00",
     "session_date": "2026-11-24",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": -1.39
     },
     "vix": {
-      "value": 29.61,
-      "change": 3.25,
-      "change_pct": 12.33
+      "value": 29.19,
+      "change": 2.83,
+      "change_pct": 10.74
     }
   },
   "pairs": {
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "extreme",
       "intraday": {
-        "price": 59684.63,
-        "range_today": 2649.62,
-        "range_vs_adr": 0.843,
+        "price": 59884.48,
+        "range_today": 2811.96,
+        "range_vs_adr": 0.895,
         "spike_flag": false,
-        "updated_at": "2026-11-26T03:05:03+09:00"
+        "updated_at": "2026-11-26T03:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1679.44,
-        "range_today": 77.8,
-        "range_vs_adr": 0.671,
+        "price": 1690.14,
+        "range_today": 87.38,
+        "range_vs_adr": 0.753,
         "spike_flag": false,
-        "updated_at": "2026-11-26T03:05:03+09:00"
+        "updated_at": "2026-11-26T03:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -162,11 +162,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 548.73,
-        "range_today": 24.41,
-        "range_vs_adr": 0.884,
+        "price": 550.17,
+        "range_today": 25.13,
+        "range_vs_adr": 0.911,
         "spike_flag": false,
-        "updated_at": "2026-11-26T03:05:03+09:00"
+        "updated_at": "2026-11-26T03:23:03+09:00"
       },
       "events": {
         "in_event_window": false,
