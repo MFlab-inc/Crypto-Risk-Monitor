@@ -1,0 +1,56 @@
+{
+  "session_date": "2026-11-25",
+  "generated_at": "2026-11-26T13:48:11+09:00",
+  "market": {
+    "dxy": {
+      "value": 103.8,
+      "change": 0.13,
+      "change_pct": 0.12
+    },
+    "us10y": {
+      "value": 4.848,
+      "change": -0.056,
+      "change_pct": -1.14
+    },
+    "vix": {
+      "value": 28.29,
+      "change": 1.93,
+      "change_pct": 7.32
+    }
+  },
+  "pairs": {
+    "BTCUSD": {
+      "data_ok": true,
+      "session_date": "2026-11-25",
+      "close": 60458.01,
+      "atr14": 3064.8,
+      "atr_pct": 5.069,
+      "adr20": 3019.76,
+      "rv20": 45.48,
+      "atr_pct_percentile_250": 94.2,
+      "regime": "highvol"
+    },
+    "ETHUSD": {
+      "data_ok": true,
+      "session_date": "2026-11-25",
+      "close": 1692.65,
+      "atr14": 108.99,
+      "atr_pct": 6.439,
+      "adr20": 108.94,
+      "rv20": 63.84,
+      "atr_pct_percentile_250": 89,
+      "regime": "highvol"
+    },
+    "BNBUSD": {
+      "data_ok": true,
+      "session_date": "2026-11-25",
+      "close": 554.03,
+      "atr14": 27.98,
+      "atr_pct": 5.05,
+      "adr20": 27.15,
+      "rv20": 53.42,
+      "atr_pct_percentile_250": 88.5,
+      "regime": "highvol"
+    }
+  }
+}
