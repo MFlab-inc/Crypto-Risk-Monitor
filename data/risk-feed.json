@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-11-26T13:48:11+09:00",
+    "generated_daily": "2026-11-26T23:30:25+09:00",
     "generated_intraday": "2026-11-26T23:29:02+09:00",
-    "generated_calendar": "2026-11-26T23:29:02+09:00",
+    "generated_calendar": "2026-11-26T23:30:25+09:00",
     "session_date": "2026-11-25",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -82,9 +82,9 @@
       "change_pct": -1.14
     },
     "vix": {
-      "value": 27.11,
-      "change": -1.18,
-      "change_pct": -4.17
+      "value": 27.07,
+      "change": -1.22,
+      "change_pct": -4.31
     }
   },
   "pairs": {
