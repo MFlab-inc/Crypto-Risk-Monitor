@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "1.0",
     "generated_daily": "2026-11-27T23:24:53+09:00",
-    "generated_intraday": "2026-11-28T04:23:05+09:00",
-    "generated_calendar": "2026-11-28T04:23:05+09:00",
+    "generated_intraday": "2026-11-28T04:29:02+09:00",
+    "generated_calendar": "2026-11-28T04:29:02+09:00",
     "session_date": "2026-11-26",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
@@ -74,12 +74,12 @@
     "dxy": {
       "value": 104.05,
       "change": 0.38,
-      "change_pct": 0.37
+      "change_pct": 0.36
     },
     "us10y": {
-      "value": 4.934,
-      "change": 0.086,
-      "change_pct": 1.77
+      "value": 4.936,
+      "change": 0.088,
+      "change_pct": 1.82
     },
     "vix": {
       "value": 23.81,
@@ -100,11 +100,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 59942.14,
+        "price": 59976.01,
         "range_today": 3456.54,
         "range_vs_adr": 1.141,
         "spike_flag": false,
-        "updated_at": "2026-11-28T04:23:05+09:00"
+        "updated_at": "2026-11-28T04:29:02+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -131,11 +131,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 1672.62,
+        "price": 1673.06,
         "range_today": 121.19,
         "range_vs_adr": 1.103,
         "spike_flag": false,
-        "updated_at": "2026-11-28T04:23:05+09:00"
+        "updated_at": "2026-11-28T04:29:02+09:00"
       },
       "events": {
         "in_event_window": false,
@@ -162,11 +162,11 @@
       "percentile_window": 365,
       "regime": "highvol",
       "intraday": {
-        "price": 553.26,
+        "price": 553.67,
         "range_today": 25.45,
         "range_vs_adr": 0.928,
         "spike_flag": false,
-        "updated_at": "2026-11-28T04:23:05+09:00"
+        "updated_at": "2026-11-28T04:29:02+09:00"
       },
       "events": {
         "in_event_window": false,
