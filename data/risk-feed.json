@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": "1.0",
-    "generated_daily": "2026-11-28T13:48:09+09:00",
+    "generated_daily": "2026-11-28T22:40:19+09:00",
     "generated_intraday": "2026-11-28T22:35:04+09:00",
-    "generated_calendar": "2026-11-28T22:35:04+09:00",
+    "generated_calendar": "2026-11-28T22:40:19+09:00",
     "session_date": "2026-11-27",
     "source": "twelvedata / yahoo(sentiment) / forexfactory(calendar)",
     "thresholds": {
